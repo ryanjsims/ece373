@@ -7,7 +7,6 @@ import java.awt.event.ActionListener;
 
 import javax.swing.*;
 
-@SuppressWarnings("serial")
 public class UniversityGUI{
 	private JFrame frame;
 	private JMenuBar menuBar;		//the horizontal container
@@ -91,9 +90,19 @@ public class UniversityGUI{
 			JMenuItem source = (JMenuItem)(e.getSource());
 			if(source.equals(adminPrintAll)){
 				handlePrintAll();
+			} else if(source.equals(fileSave)){
+				University.saveData(univ);
+			} else if(source.equals(fileLoad)){
+				univ = University.loadData();
 			} else if(source.equals(fileExit)){
 				frame.dispose();
-			}
+			} else if(source.equals(studentAdd)){
+				handleAdd();
+			} else if(source.equals(studentDrop)){
+				handleDrop();
+			} else if(source.equals(studentPrint)){
+				handlePrint();
+			} 
 		}
 		
 		public void handlePrintAll(){
@@ -103,6 +112,18 @@ public class UniversityGUI{
 			allText.setWrapStyleWord(true);
 			scrollPane.setPreferredSize(new Dimension(500,500));
 			JOptionPane.showMessageDialog(null, scrollPane, "University Info", JOptionPane.PLAIN_MESSAGE);
+		}
+		
+		public void handleAdd(){
+			
+		}
+		
+		public void handleDrop(){
+			
+		}
+		
+		public void handlePrint(){
+			
 		}
 		
 	}
