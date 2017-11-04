@@ -1,5 +1,7 @@
 package org.university.people;
 
+import java.io.Serializable;
+
 public abstract class Employee extends Person {
 	private double payRate;
 

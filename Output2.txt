@@ -1,0 +1,57 @@
+------New Library Created --------
+
+
+Latest Status Report of My Library ....... 
+My Library has 4 books and 2 people.
+Romeo and Juliet by Shakespear: Available
+Tale of Two Cities by Charles Dickens: Available
+Mother by Maxim Gorky: Available
+My Times by Bill Clinton: Available
+Jack Benny has 0 of  Maximum limit 2
+Lahiru has 0 of  Maximum limit 2
+Total Books Available to Lend: 4
+
+--- End of Status Report---
+
+Mother cannot be lent to Lahiru. Max limit of books is 2
+
+Latest Status Report of My Library ....... 
+My Library has 4 books and 2 people.
+Romeo and Juliet by Shakespear: Checked out to Lahiru
+Tale of Two Cities by Charles Dickens: Checked out to Lahiru
+Mother by Maxim Gorky: Available
+My Times by Bill Clinton: Checked out to Jack Benny
+Jack Benny has 1 of  Maximum limit 2
+Lahiru has 2 of  Maximum limit 2
+Total Books Available to Lend: 1
+
+--- End of Status Report---
+
+Lahiru's Max limit is now 3
+Mother cannot be lent to Lahiru. Already lent to Jack Benny
+
+Latest Status Report of My Library ....... 
+My Library has 4 books and 2 people.
+Romeo and Juliet by Shakespear: Checked out to Lahiru
+Tale of Two Cities by Charles Dickens: Checked out to Lahiru
+Mother by Maxim Gorky: Checked out to Jack Benny
+My Times by Bill Clinton: Checked out to Jack Benny
+Jack Benny has 2 of  Maximum limit 2
+Lahiru has 2 of  Maximum limit 3
+Total Books Available to Lend: 0
+
+--- End of Status Report---
+
+
+Latest Status Report of My Library ....... 
+My Library has 4 books and 2 people.
+Romeo and Juliet by Shakespear: Checked out to Lahiru
+Tale of Two Cities by Charles Dickens: Checked out to Lahiru
+Mother by Maxim Gorky: Available
+My Times by Bill Clinton: Checked out to Jack Benny
+Jack Benny has 1 of  Maximum limit 2
+Lahiru has 2 of  Maximum limit 3
+Total Books Available to Lend: 1
+
+--- End of Status Report---
+

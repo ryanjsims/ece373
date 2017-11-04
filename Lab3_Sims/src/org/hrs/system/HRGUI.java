@@ -18,10 +18,12 @@ public class HRGUI extends JFrame
 	private Employee  emp1;
 	private JMenuBar menuBar;		//the horizontal container
 	private JMenu adminMenu;		//JMenu objects are added to JMenuBar objects as the "tabs"
+	private JMenu fileMenu;
 	private ArrayList<Employee> empList;
 
 	// File submenus
-    
+	private JMenuItem fileSave; 		//JMenuItem objects are added to JMenu objects as the drop down selections.
+	private JMenuItem fileLoad;
 	
 	
 	// Admin 
@@ -60,6 +62,7 @@ public class HRGUI extends JFrame
 		// Employee Student Menu
 		
 		adminMenu = new JMenu("Administrator");
+		fileMenu = new JMenu("File");
 		
 		adminSetPayRate = new JMenuItem ("Set PayRate" );
 		adminPrintAll = new JMenuItem("Print Employee Info");
@@ -69,7 +72,17 @@ public class HRGUI extends JFrame
 	    
 	    adminMenu.add(adminSetPayRate);
 		adminMenu.add(adminPrintAll);
+		
+		fileSave = new JMenuItem("Save");
+		fileLoad = new JMenuItem("Load");
+		
+		fileSave.addActionListener(new MenuListener());
+		fileLoad.addActionListener(new MenuListener());
+		
+		fileMenu.add(fileSave);
+		fileMenu.add(fileLoad);
 			
+		menuBar.add(fileMenu);
 	    menuBar.add(adminMenu);
 	
 		setJMenuBar(menuBar);
@@ -88,6 +101,12 @@ public class HRGUI extends JFrame
 			else if(source.equals(adminPrintAll))
 			{
 				handleAdminPrint();
+			}
+			else if(source.equals(fileSave)){
+				handleFileSave();
+			}
+			else if(source.equals(fileLoad)){
+				handleFileLoad();
 			}
 		}
 		
@@ -139,6 +158,40 @@ public class HRGUI extends JFrame
 						"Error", 
 						JOptionPane.PLAIN_MESSAGE);
 			}
+		}
+		
+		private void handleFileSave(){
+			String empName;
+			empName = JOptionPane.showInputDialog(null, "Employee Name : ", "Save employee data?", JOptionPane.QUESTION_MESSAGE);
+			
+			if(empName != null)
+			{
+				if(empName.trim().equals(""))
+				{
+					JOptionPane.showMessageDialog(null, 
+												"Please enter correct Employee name", 
+												"Error Employee doesn't exist", 
+												JOptionPane.PLAIN_MESSAGE);
+				}
+				else
+				{
+					if(!containsEmployee(empName))
+					{
+						JOptionPane.showMessageDialog(null,
+													"Employee  \""+empName+"\" doesn't exist.",
+													"Error ",
+													JOptionPane.PLAIN_MESSAGE);
+					}
+					else
+					{
+						Employee.saveData(emp1);
+					}
+				}
+			}
+		}
+		
+		private void handleFileLoad(){
+			emp1 = Employee.loadData();
 		}
 		
 		public boolean containsEmployee(String name)

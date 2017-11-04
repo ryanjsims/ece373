@@ -1,10 +1,12 @@
 package org.university.hardware;
 
+import java.io.PrintStream;
+import java.io.Serializable;
 import java.util.ArrayList;
 
 import org.university.software.Course;
 
-public class Classroom {
+public class Classroom implements Serializable {
 	
 	private ArrayList<Course> courses;
 	private String room;
@@ -69,6 +71,24 @@ public class Classroom {
 			}
 			if(slot != "")
 				System.out.println(slot + " " + className);
+		}
+	}
+	
+	public void printSchedule(PrintStream stream){
+		int[] timeSlots = getTimeSlots();
+		for(int time : timeSlots){
+			String slot = "";
+			String className = "";
+			for(Course crs : courses){
+				if(crs.getMeetingTime(time) != ""){
+					slot = crs.getMeetingTime(time);
+					className = crs.getDepartment().getDepartmentName() 
+							+ crs.getCourseNumber() + " " + crs.getName();
+					break;
+				}
+			}
+			if(slot != "")
+				stream.println(slot + " " + className);
 		}
 	}
 }

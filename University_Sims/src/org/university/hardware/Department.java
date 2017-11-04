@@ -1,9 +1,11 @@
 package org.university.hardware;
+import java.io.PrintStream;
+import java.io.Serializable;
 import java.util.ArrayList;
 import org.university.people.*;
 import org.university.software.*;
 
-public class Department {
+public class Department implements Serializable {
 	private String name;
 	private ArrayList<Course> courses;
 	private ArrayList<Student> students;
@@ -72,9 +74,21 @@ public class Department {
 		}
 	}
 	
+	public void printStudentList(PrintStream stream){
+		for(Student s : students){
+			stream.println(s.getName());
+		}
+	}
+	
 	public void printProfessorList(){
 		for(Professor s : profs){
 			System.out.println(s.getName());
+		}
+	}
+	
+	public void printProfessorList(PrintStream stream){
+		for(Professor s : profs){
+			stream.println(s.getName());
 		}
 	}
 
@@ -84,9 +98,21 @@ public class Department {
 		}
 	}
 	
+	public void printStaffList(PrintStream stream){
+		for(Staff s : staffList){
+			stream.println(s.getName());
+		}
+	}
+	
 	public void printCourseList(){
 		for(Course s : courses){
 			System.out.println(name + s.getCourseNumber());
+		}
+	}
+	
+	public void printCourseList(PrintStream stream){
+		for(Course s : courses){
+			stream.println(name + s.getCourseNumber());
 		}
 	}
 }

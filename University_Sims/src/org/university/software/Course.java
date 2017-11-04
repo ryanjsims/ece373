@@ -1,11 +1,13 @@
 package org.university.software;
+import java.io.PrintStream;
+import java.io.Serializable;
 import java.util.ArrayList;
 import org.university.people.*;
 import org.university.hardware.*;
 
 
 
-public class Course {
+public class Course implements Serializable {
 	private String[] Week = {"Mon", "Tue", "Wed", "Thu", "Fri"};
 	private String[] Slot = {"8:00am to 9:15am",
 							 "9:30am to 10:45am",
@@ -42,9 +44,21 @@ public class Course {
 		}
 	}
 	
+	public void printSchedule(PrintStream stream){
+		for(int timeSlot : schedule){
+			stream.println(getMeetingTime(timeSlot) + " " + room.getRoomNumber());
+		}
+	}
+	
 	public void printRoster(){
 		for(Person snt : roster){
 			System.out.println(snt.getName());
+		}
+	}
+	
+	public void printRoster(PrintStream stream){
+		for(Person snt : roster){
+			stream.println(snt.getName());
 		}
 	}
 	

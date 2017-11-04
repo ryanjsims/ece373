@@ -1,10 +1,12 @@
 package org.university.people;
 
+import java.io.PrintStream;
+import java.io.Serializable;
 import java.util.ArrayList;
 
 import org.university.software.Course;
 
-public abstract class Person {
+public abstract class Person implements Serializable {
 	private String name;
 	private ArrayList<Course> courses;
 	
@@ -60,6 +62,15 @@ public abstract class Person {
 			for(Course crs : courses)
 				if(crs.getMeetingTime(time) != "")
 					System.out.println(crs.getMeetingTime(time) 
+							+ " " + crs.getDepartment().getDepartmentName() 
+							+ crs.getCourseNumber() + " " + crs.getName());
+	}
+	
+	public void printSchedule(PrintStream stream){
+		for(int time : getTimeSlots())
+			for(Course crs : courses)
+				if(crs.getMeetingTime(time) != "")
+					stream.println(crs.getMeetingTime(time) 
 							+ " " + crs.getDepartment().getDepartmentName() 
 							+ crs.getCourseNumber() + " " + crs.getName());
 	}
