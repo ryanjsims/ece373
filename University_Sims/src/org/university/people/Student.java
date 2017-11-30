@@ -53,6 +53,16 @@ public class Student extends Person {
 		}
 	}
 	
+	public boolean addCourseBool(Course crs){
+		if(!detectConflictNoPrint(crs)){
+			super.getCourses().add(crs);
+			if(!crs.getStudentRoster().contains(this))
+				crs.addStudent(this);
+			return true;
+		}
+		return false;
+	}
+	
 	public void dropCourse(Course crs){
 		if(super.getCourses().contains(crs)){
 			super.getCourses().remove(crs);
@@ -66,6 +76,24 @@ public class Student extends Person {
 					+ crs.getDepartment().getDepartmentName() 
 					+ crs.getCourseNumber() + ".");
 		}
+	}
+	
+	public boolean dropCourseBool(Course crs){
+		if(super.getCourses().contains(crs)){
+			super.getCourses().remove(crs);
+			if(crs.getStudentRoster().contains(this))
+				crs.removeStudent(this);
+			return true;
+		}
+		return false;
+	}
+	
+	public Course getCourse(String deptName, int num){
+		for(Course crs : super.getCourses()){
+			if(crs.getDepartment().getDepartmentName().equals(deptName) && crs.getCourseNumber() == num)
+				return crs;
+		}
+		return null;
 	}
 	
 }

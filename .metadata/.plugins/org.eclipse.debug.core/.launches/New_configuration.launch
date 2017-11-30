@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.acceleo.ide.ui.launching.launchConfigurationType">
+<stringAttribute key="org.eclipse.acceleo.ide.ui.ARGUMENTS" value=""/>
+<booleanAttribute key="org.eclipse.acceleo.ide.ui.COMPUTE_PROFILING" value="false"/>
+<booleanAttribute key="org.eclipse.acceleo.ide.ui.COMPUTE_TRACEABILITY" value="false"/>
+<stringAttribute key="org.eclipse.acceleo.ide.ui.LAUNCHING_STRATEGY_DESCRIPTION" value="Java Application"/>
+<stringAttribute key="org.eclipse.acceleo.ide.ui.MODEL_PATH" value="/Lab4_UML_Sims/model.uml"/>
+<stringAttribute key="org.eclipse.acceleo.ide.ui.TARGET_PATH" value="/Lab4_M2T_Sims/generated_code"/>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/Lab4_M2T_Sims/src/Lab4_M2T_Sims/main/Generate.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<booleanAttribute key="org.eclipse.jdt.launching.ATTR_USE_START_ON_FIRST_THREAD" value="true"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="Lab4_M2T_Sims.main.Generate"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="&quot;C:/Users/Ryan/Documents/ECE373/ece373/Lab4_UML_Sims/model.uml&quot; &quot;C:/Users/Ryan/Documents/ECE373/ece373/Lab4_M2T_Sims/generated_code&quot;"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Lab4_M2T_Sims"/>
+</launchConfiguration>

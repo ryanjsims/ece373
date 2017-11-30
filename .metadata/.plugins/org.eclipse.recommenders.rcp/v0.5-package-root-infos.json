@@ -1,0 +1,911 @@
+[
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "77b06a231a856ad388813ce55114e93db882b58d",
+    "jarFileModificationDate": "2015-11-29T16:39:51.615-07:00",
+    "location": "C:\\Program Files\\Java\\jre1.8.0_65\\lib\\resources.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "org.eclipse.equinox.app",
+    "version": {
+      "major": 1,
+      "minor": 3,
+      "micro": 100,
+      "qualifier": "v20130327-1442"
+    },
+    "jarFileFingerprint": "ae6b3f37e295b65ecbbddf356d06262a07f281cf",
+    "jarFileModificationDate": "2015-05-24T22:11:18.984-07:00",
+    "location": "C:\\Program Files (x86)\\Eclipse\\eclipse\\plugins\\org.eclipse.equinox.app_1.3.100.v20130327-1442.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "7448b4e781002f3ee67ebf830bc3c3110f7a63c0",
+    "jarFileModificationDate": "2015-11-29T16:39:53.377-07:00",
+    "location": "C:\\Program Files\\Java\\jre1.8.0_65\\lib\\charsets.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "64c0b4dfda192306cf328d5981673b1e005d11b5",
+    "jarFileModificationDate": "2017-11-10T00:23:28.200-07:00",
+    "location": "C:\\Program Files\\Java\\jdk1.8.0_151\\jre\\lib\\resources.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "b87fef0794f16f319483cb739a4cfdcef997c348",
+    "jarFileModificationDate": "2017-11-10T00:23:28.136-07:00",
+    "location": "C:\\Program Files\\Java\\jdk1.8.0_151\\jre\\lib\\ext\\sunpkcs11.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "org.eclipse.core.runtime",
+    "version": {
+      "major": 3,
+      "minor": 9,
+      "micro": 100,
+      "qualifier": "v20131218-1515"
+    },
+    "jarFileFingerprint": "1dfb8e5e844373ab86487f254242228771764065",
+    "jarFileModificationDate": "2015-05-24T22:12:04.819-07:00",
+    "location": "C:\\Program Files (x86)\\Eclipse\\eclipse\\plugins\\org.eclipse.core.runtime_3.9.100.v20131218-1515.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "javax.annotation",
+    "version": {
+      "major": 1,
+      "minor": 1,
+      "micro": 0,
+      "qualifier": "v201209060031"
+    },
+    "jarFileFingerprint": "56050d8d27f266e954fa933bc085d011ac96b6e1",
+    "jarFileModificationDate": "2015-05-24T22:13:11.637-07:00",
+    "location": "C:\\Program Files (x86)\\Eclipse\\eclipse\\plugins\\javax.annotation_1.1.0.v201209060031.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "75dc761a86a6577f4e67c5f7e7d0590fce666e37",
+    "jarFileModificationDate": "2017-11-10T00:23:28.132-07:00",
+    "location": "C:\\Program Files\\Java\\jdk1.8.0_151\\jre\\lib\\ext\\sunjce_provider.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "lpg.runtime.java",
+    "version": {
+      "major": 2,
+      "minor": 0,
+      "micro": 17,
+      "qualifier": "v201004271640"
+    },
+    "jarFileFingerprint": "8cd9d565fa707ae9e8cb0a35e795221aadeccd2a",
+    "jarFileModificationDate": "2017-11-06T21:30:18.701-07:00",
+    "location": "C:\\Users\\Ryan\\.eclipse\\org.eclipse.platform_4.3.2_135501703_win32_win32_x86_64\\plugins\\lpg.runtime.java_2.0.17.v201004271640.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.eclipse.emf.ecore",
+    "version": {
+      "major": 2,
+      "minor": 9,
+      "micro": 2,
+      "qualifier": "v20131212-0545"
+    },
+    "jarFileFingerprint": "a8287cace2ae3452ae40f926408614281c108973",
+    "jarFileModificationDate": "2015-05-24T22:12:06.772-07:00",
+    "location": "C:\\Program Files (x86)\\Eclipse\\eclipse\\plugins\\org.eclipse.emf.ecore_2.9.2.v20131212-0545.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.eclipse.uml2.types",
+    "version": {
+      "major": 1,
+      "minor": 1,
+      "micro": 0,
+      "qualifier": "v20140202-2055"
+    },
+    "jarFileFingerprint": "cd237e17882cc0a1fa807cd078d796e235696895",
+    "jarFileModificationDate": "2017-11-06T21:31:08.425-07:00",
+    "location": "C:\\Users\\Ryan\\.eclipse\\org.eclipse.platform_4.3.2_135501703_win32_win32_x86_64\\plugins\\org.eclipse.uml2.types_1.1.0.v20140202-2055.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.eclipse.core.contenttype",
+    "version": {
+      "major": 3,
+      "minor": 4,
+      "micro": 200,
+      "qualifier": "v20130326-1255"
+    },
+    "jarFileFingerprint": "0335ae99862a28b05778fbd10fbf65e000ae3cfe",
+    "jarFileModificationDate": "2015-05-24T22:12:59.747-07:00",
+    "location": "C:\\Program Files (x86)\\Eclipse\\eclipse\\plugins\\org.eclipse.core.contenttype_3.4.200.v20130326-1255.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.eclipse.ocl.ecore",
+    "version": {
+      "major": 3,
+      "minor": 3,
+      "micro": 0,
+      "qualifier": "v20130520-1222"
+    },
+    "jarFileFingerprint": "61e619b8f5deace59a425c3ddd773b7f6632063f",
+    "jarFileModificationDate": "2017-11-06T21:30:33.244-07:00",
+    "location": "C:\\Users\\Ryan\\.eclipse\\org.eclipse.platform_4.3.2_135501703_win32_win32_x86_64\\plugins\\org.eclipse.ocl.ecore_3.3.0.v20130520-1222.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "f57d2c301d4aebc81c255f97f6369e3f30e3f310",
+    "jarFileModificationDate": "2015-11-29T16:39:51.295-07:00",
+    "location": "C:\\Program Files\\Java\\jre1.8.0_65\\lib\\ext\\jaccess.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "3f881e3b34693a96cd3d9e20d6aeabae98757359",
+    "jarFileModificationDate": "2015-11-29T16:39:51.411-07:00",
+    "location": "C:\\Program Files\\Java\\jre1.8.0_65\\lib\\ext\\sunpkcs11.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "12ef4e0ae34b7802243d2123236476efb42a49f4",
+    "jarFileModificationDate": "2015-11-29T16:39:53.449-07:00",
+    "location": "C:\\Program Files\\Java\\jre1.8.0_65\\lib\\ext\\localedata.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "3eb110e94339ba3700fea3d6d22a60001c0a330c",
+    "jarFileModificationDate": "2015-11-29T16:39:51.307-07:00",
+    "location": "C:\\Program Files\\Java\\jre1.8.0_65\\lib\\ext\\nashorn.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "org.eclipse.acceleo.engine",
+    "version": {
+      "major": 3,
+      "minor": 7,
+      "micro": 2,
+      "qualifier": "201708211328"
+    },
+    "jarFileFingerprint": "0c6daa9127c1b9d04be5579189ace75bc9528f71",
+    "jarFileModificationDate": "2017-11-06T21:48:16.934-07:00",
+    "location": "C:\\Users\\Ryan\\.eclipse\\org.eclipse.platform_4.3.2_135501703_win32_win32_x86_64\\plugins\\org.eclipse.acceleo.engine_3.7.2.201708211328.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.eclipse.emf.common",
+    "version": {
+      "major": 2,
+      "minor": 9,
+      "micro": 2,
+      "qualifier": "v20131212-0545"
+    },
+    "jarFileFingerprint": "e209f6876f305406b530d6b8d2c1ada30669541a",
+    "jarFileModificationDate": "2015-05-24T22:13:23.605-07:00",
+    "location": "C:\\Program Files (x86)\\Eclipse\\eclipse\\plugins\\org.eclipse.emf.common_2.9.2.v20131212-0545.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.eclipse.core.resources",
+    "version": {
+      "major": 3,
+      "minor": 8,
+      "micro": 101,
+      "qualifier": "v20130717-0806"
+    },
+    "jarFileFingerprint": "5fc550dca872450b3929ff0d5903cc1b1950d03d",
+    "jarFileModificationDate": "2015-05-24T22:13:03.201-07:00",
+    "location": "C:\\Program Files (x86)\\Eclipse\\eclipse\\plugins\\org.eclipse.core.resources_3.8.101.v20130717-0806.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "29820464260229b133c39965832ec39ba1b5e363",
+    "jarFileModificationDate": "2015-11-29T16:39:51.347-07:00",
+    "location": "C:\\Program Files\\Java\\jre1.8.0_65\\lib\\ext\\sunjce_provider.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "org.eclipse.emf.codegen",
+    "version": {
+      "major": 2,
+      "minor": 9,
+      "micro": 0,
+      "qualifier": "v20140203-1126"
+    },
+    "jarFileFingerprint": "ed86c8f4852930f667dd412f63faef51a62349cc",
+    "jarFileModificationDate": "2017-11-06T21:30:48.323-07:00",
+    "location": "C:\\Users\\Ryan\\.eclipse\\org.eclipse.platform_4.3.2_135501703_win32_win32_x86_64\\plugins\\org.eclipse.emf.codegen_2.9.0.v20140203-1126.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.eclipse.equinox.registry",
+    "version": {
+      "major": 3,
+      "minor": 5,
+      "micro": 301,
+      "qualifier": "v20130717-1549"
+    },
+    "jarFileFingerprint": "decd3075fd6623dad1a708dafe8899643dde46c5",
+    "jarFileModificationDate": "2015-05-24T22:12:21.576-07:00",
+    "location": "C:\\Program Files (x86)\\Eclipse\\eclipse\\plugins\\org.eclipse.equinox.registry_3.5.301.v20130717-1549.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "82a0f9c5cbc2b79bdb6cfe80487691e232b26f9c",
+    "jarFileModificationDate": "2015-11-29T16:39:51.347-07:00",
+    "location": "C:\\Program Files\\Java\\jre1.8.0_65\\lib\\ext\\sunec.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "com.google.guava",
+    "version": {
+      "major": 21,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": "v20170206-1425"
+    },
+    "jarFileFingerprint": "5ca494c9fc1edb961a2e929440d8575345cb5b34",
+    "jarFileModificationDate": "2017-11-06T21:48:19.929-07:00",
+    "location": "C:\\Users\\Ryan\\.eclipse\\org.eclipse.platform_4.3.2_135501703_win32_win32_x86_64\\plugins\\com.google.guava_21.0.0.v20170206-1425.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "2c6d33973ecbd1199b1e727e80a9271ad275fdec",
+    "jarFileModificationDate": "2017-11-10T00:23:28.084-07:00",
+    "location": "C:\\Program Files\\Java\\jdk1.8.0_151\\jre\\lib\\ext\\cldrdata.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "org.eclipse.acceleo.profiler",
+    "version": {
+      "major": 3,
+      "minor": 7,
+      "micro": 2,
+      "qualifier": "201708211328"
+    },
+    "jarFileFingerprint": "9c49a986fda37a8bbc904d6eb728b78ea2545c23",
+    "jarFileModificationDate": "2017-11-06T21:48:17.851-07:00",
+    "location": "C:\\Users\\Ryan\\.eclipse\\org.eclipse.platform_4.3.2_135501703_win32_win32_x86_64\\plugins\\org.eclipse.acceleo.profiler_3.7.2.201708211328.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "bf1c817820341a246f7130fe046e8310b03d04f6",
+    "jarFileModificationDate": "2017-11-10T00:23:28.132-07:00",
+    "location": "C:\\Program Files\\Java\\jdk1.8.0_151\\jre\\lib\\ext\\sunec.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "f4541459714ea68beb71ef7e2e0391bf97aa31c1",
+    "jarFileModificationDate": "2015-11-29T16:39:51.407-07:00",
+    "location": "C:\\Program Files\\Java\\jre1.8.0_65\\lib\\ext\\sunmscapi.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "4022df2c5cb0261efb1092f196d05fd4138b465b",
+    "jarFileModificationDate": "2017-11-10T00:23:33.949-07:00",
+    "location": "C:\\Program Files\\Java\\jdk1.8.0_151\\jre\\lib\\ext\\localedata.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "junit",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "4e031bb61df09069aeb2bffb4019e7a5034a4ee0",
+    "jarFileModificationDate": "2015-05-24T22:14:06.512-07:00",
+    "location": "C:\\Program Files (x86)\\Eclipse\\eclipse\\plugins\\org.junit_4.11.0.v201303080030\\junit.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "87527deca87e38a86380e9b7b776a33be663937e",
+    "jarFileModificationDate": "2015-11-29T16:39:53.788-07:00",
+    "location": "C:\\Program Files\\Java\\jre1.8.0_65\\lib\\ext\\jfxrt.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "1d101fd847db3dbff6ed025a3bcd52c5c5cd8577",
+    "jarFileModificationDate": "2015-11-29T16:39:51.415-07:00",
+    "location": "C:\\Program Files\\Java\\jre1.8.0_65\\lib\\ext\\zipfs.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "f8e601f3a7aba80add61bc4a8dbcbe0e12601b98",
+    "jarFileModificationDate": "2015-11-29T16:39:51.507-07:00",
+    "location": "C:\\Program Files\\Java\\jre1.8.0_65\\lib\\jfr.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "732cb989f58ff5f30cd59e608ad5e001422ff0b3",
+    "jarFileModificationDate": "2017-11-10T00:23:33.749-07:00",
+    "location": "C:\\Program Files\\Java\\jdk1.8.0_151\\jre\\lib\\jsse.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "f8533ca11d3d23ab410ca0e3b556ab9520288a83",
+    "jarFileModificationDate": "2017-11-10T00:23:28.136-07:00",
+    "location": "C:\\Program Files\\Java\\jdk1.8.0_151\\jre\\lib\\ext\\zipfs.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "16c7f9ec41eba68aa6937c6ca922487625cbe6a7",
+    "jarFileModificationDate": "2017-11-10T00:23:28.076-07:00",
+    "location": "C:\\Program Files\\Java\\jdk1.8.0_151\\jre\\lib\\ext\\access-bridge-64.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "f9e9f15d7a02e8f7b23ac489dc6e4e18571f6854",
+    "jarFileModificationDate": "2017-11-10T00:23:28.120-07:00",
+    "location": "C:\\Program Files\\Java\\jdk1.8.0_151\\jre\\lib\\ext\\jfxrt.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "org.hamcrest.core",
+    "version": {
+      "major": 1,
+      "minor": 3,
+      "micro": 0,
+      "qualifier": "v201303031735"
+    },
+    "jarFileFingerprint": "5ed9fe32ab1d2b18bec7cac0a044090100f327ba",
+    "jarFileModificationDate": "2015-05-24T22:12:15.148-07:00",
+    "location": "C:\\Program Files (x86)\\Eclipse\\eclipse\\plugins\\org.hamcrest.core_1.3.0.v201303031735.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "d84f42040980fc7f4b97be177e38c5e5cf0b93ce",
+    "jarFileModificationDate": "2017-11-10T00:23:28.168-07:00",
+    "location": "C:\\Program Files\\Java\\jdk1.8.0_151\\jre\\lib\\jce.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "f4881b67d9ec84ccaf2f83bee2ff048eaff86fb5",
+    "jarFileModificationDate": "2017-11-10T00:23:28.176-07:00",
+    "location": "C:\\Program Files\\Java\\jdk1.8.0_151\\jre\\lib\\jfr.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "0e814311617ccb788eb4aaf47fa859d353473695",
+    "jarFileModificationDate": "2017-11-10T00:23:28.128-07:00",
+    "location": "C:\\Program Files\\Java\\jdk1.8.0_151\\jre\\lib\\ext\\nashorn.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "dd6ab36db48e936c9b835b8a512607cb5d526b1d",
+    "jarFileModificationDate": "2017-11-10T00:23:33.689-07:00",
+    "location": "C:\\Program Files\\Java\\jdk1.8.0_151\\jre\\lib\\rt.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "org.eclipse.emf.ecore.xmi",
+    "version": {
+      "major": 2,
+      "minor": 9,
+      "micro": 1,
+      "qualifier": "v20131212-0545"
+    },
+    "jarFileFingerprint": "b0446c899d9cef9219f66947b8e29f482c6d3cb0",
+    "jarFileModificationDate": "2015-05-24T22:11:29.343-07:00",
+    "location": "C:\\Program Files (x86)\\Eclipse\\eclipse\\plugins\\org.eclipse.emf.ecore.xmi_2.9.1.v20131212-0545.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.eclipse.equinox.preferences",
+    "version": {
+      "major": 3,
+      "minor": 5,
+      "micro": 100,
+      "qualifier": "v20130422-1538"
+    },
+    "jarFileFingerprint": "75b77bdb8eb93ed5c6d36267c46bf4ff50476747",
+    "jarFileModificationDate": "2015-05-24T22:11:44.463-07:00",
+    "location": "C:\\Program Files (x86)\\Eclipse\\eclipse\\plugins\\org.eclipse.equinox.preferences_3.5.100.v20130422-1538.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.eclipse.ocl.common",
+    "version": {
+      "major": 1,
+      "minor": 1,
+      "micro": 0,
+      "qualifier": "v20130531-0544"
+    },
+    "jarFileFingerprint": "f5105b12293ecd8d5d8b2f59cf33404a66bf377f",
+    "jarFileModificationDate": "2017-11-06T21:30:33.446-07:00",
+    "location": "C:\\Users\\Ryan\\.eclipse\\org.eclipse.platform_4.3.2_135501703_win32_win32_x86_64\\plugins\\org.eclipse.ocl.common_1.1.0.v20130531-0544.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "fa76830207821252d783dfb31a6af4de77fb53fa",
+    "jarFileModificationDate": "2015-11-29T16:39:53.257-07:00",
+    "location": "C:\\Program Files\\Java\\jre1.8.0_65\\lib\\rt.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "103c9a636b3fbf37bdc98581256377205d7ec2d4",
+    "jarFileModificationDate": "2015-11-29T16:39:51.207-07:00",
+    "location": "C:\\Program Files\\Java\\jre1.8.0_65\\lib\\ext\\access-bridge-64.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "e517077038633832d29676185e0a902808aa065e",
+    "jarFileModificationDate": "2017-11-10T00:23:28.132-07:00",
+    "location": "C:\\Program Files\\Java\\jdk1.8.0_151\\jre\\lib\\ext\\sunmscapi.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "39790b13fa4911eb708fc4cf74a00bda8d450546",
+    "jarFileModificationDate": "2015-11-29T16:39:51.215-07:00",
+    "location": "C:\\Program Files\\Java\\jre1.8.0_65\\lib\\ext\\cldrdata.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "org.eclipse.uml2.uml",
+    "version": {
+      "major": 4,
+      "minor": 1,
+      "micro": 2,
+      "qualifier": "v20140202-2055"
+    },
+    "jarFileFingerprint": "4df50988cd57cfa7f80055f91833ea4d39638d40",
+    "jarFileModificationDate": "2017-11-06T21:31:09.877-07:00",
+    "location": "C:\\Users\\Ryan\\.eclipse\\org.eclipse.platform_4.3.2_135501703_win32_win32_x86_64\\plugins\\org.eclipse.uml2.uml_4.1.2.v20140202-2055.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.eclipse.ocl",
+    "version": {
+      "major": 3,
+      "minor": 3,
+      "micro": 0,
+      "qualifier": "v20140120-1508"
+    },
+    "jarFileFingerprint": "57a55d19bb8ecdd1d86b52ae6c89ee727a5bfd46",
+    "jarFileModificationDate": "2017-11-06T21:31:07.215-07:00",
+    "location": "C:\\Users\\Ryan\\.eclipse\\org.eclipse.platform_4.3.2_135501703_win32_win32_x86_64\\plugins\\org.eclipse.ocl_3.3.0.v20140120-1508.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "runtime_registry_compatibility",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "ac04672bb5fe775a57510ac581b6645210c11c32",
+    "jarFileModificationDate": "2015-05-24T22:14:06.668-07:00",
+    "location": "C:\\Program Files (x86)\\Eclipse\\eclipse\\plugins\\org.eclipse.core.runtime.compatibility.registry_3.5.200.v20130514-1256\\runtime_registry_compatibility.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.eclipse.acceleo.common",
+    "version": {
+      "major": 3,
+      "minor": 7,
+      "micro": 2,
+      "qualifier": "201708211328"
+    },
+    "jarFileFingerprint": "bfd3ad70c5a843183cb79c186e2b1814dfbf382e",
+    "jarFileModificationDate": "2017-11-06T21:48:16.636-07:00",
+    "location": "C:\\Users\\Ryan\\.eclipse\\org.eclipse.platform_4.3.2_135501703_win32_win32_x86_64\\plugins\\org.eclipse.acceleo.common_3.7.2.201708211328.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.eclipse.emf.validation",
+    "version": {
+      "major": 1,
+      "minor": 7,
+      "micro": 0,
+      "qualifier": "201306111341"
+    },
+    "jarFileFingerprint": "b03fba48fbb798283f76bf9133460ca1adc0b5c5",
+    "jarFileModificationDate": "2017-11-06T21:30:24.145-07:00",
+    "location": "C:\\Users\\Ryan\\.eclipse\\org.eclipse.platform_4.3.2_135501703_win32_win32_x86_64\\plugins\\org.eclipse.emf.validation_1.7.0.201306111341.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "662796824d046cb5f869c9e6b714a29bf561f6ea",
+    "jarFileModificationDate": "2015-11-29T16:39:51.231-07:00",
+    "location": "C:\\Program Files\\Java\\jre1.8.0_65\\lib\\ext\\dnsns.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "javax.inject",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": "v20091030"
+    },
+    "jarFileFingerprint": "38623235627d561c3eb9a558de9a5535a1c30e29",
+    "jarFileModificationDate": "2015-05-24T22:12:59.029-07:00",
+    "location": "C:\\Program Files (x86)\\Eclipse\\eclipse\\plugins\\javax.inject_1.0.0.v20091030.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.eclipse.uml2.common",
+    "version": {
+      "major": 1,
+      "minor": 8,
+      "micro": 2,
+      "qualifier": "v20140202-2055"
+    },
+    "jarFileFingerprint": "982ad4bcb5247de4a44081f953643791c18f9716",
+    "jarFileModificationDate": "2017-11-06T21:31:07.348-07:00",
+    "location": "C:\\Users\\Ryan\\.eclipse\\org.eclipse.platform_4.3.2_135501703_win32_win32_x86_64\\plugins\\org.eclipse.uml2.common_1.8.2.v20140202-2055.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "0b666ae06623aace1a8e4dab5be1f392e1d6b950",
+    "jarFileModificationDate": "2017-11-10T00:23:28.084-07:00",
+    "location": "C:\\Program Files\\Java\\jdk1.8.0_151\\jre\\lib\\ext\\dnsns.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "org.eclipse.emf.codegen.ecore",
+    "version": {
+      "major": 2,
+      "minor": 9,
+      "micro": 1,
+      "qualifier": "v20140203-1126"
+    },
+    "jarFileFingerprint": "c5f3f438251f108dacd75591e6f30365bc03156a",
+    "jarFileModificationDate": "2017-11-06T21:30:50.969-07:00",
+    "location": "C:\\Users\\Ryan\\.eclipse\\org.eclipse.platform_4.3.2_135501703_win32_win32_x86_64\\plugins\\org.eclipse.emf.codegen.ecore_2.9.1.v20140203-1126.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.eclipse.core.jobs",
+    "version": {
+      "major": 3,
+      "minor": 5,
+      "micro": 300,
+      "qualifier": "v20130429-1813"
+    },
+    "jarFileFingerprint": "69a54a3766004fc09222e2be6da544dde50ba50f",
+    "jarFileModificationDate": "2015-05-24T22:13:26.918-07:00",
+    "location": "C:\\Program Files (x86)\\Eclipse\\eclipse\\plugins\\org.eclipse.core.jobs_3.5.300.v20130429-1813.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.eclipse.emf.mapping.ecore2xml",
+    "version": {
+      "major": 2,
+      "minor": 7,
+      "micro": 0,
+      "qualifier": "v20140203-1126"
+    },
+    "jarFileFingerprint": "ca2bf8fc009c28541e084a7992d1397063c888c1",
+    "jarFileModificationDate": "2017-11-06T21:31:03.894-07:00",
+    "location": "C:\\Users\\Ryan\\.eclipse\\org.eclipse.platform_4.3.2_135501703_win32_win32_x86_64\\plugins\\org.eclipse.emf.mapping.ecore2xml_2.7.0.v20140203-1126.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "58b95b2da2ea5a049b31647cdcd59539ae1240a4",
+    "jarFileModificationDate": "2015-11-29T16:39:51.495-07:00",
+    "location": "C:\\Program Files\\Java\\jre1.8.0_65\\lib\\jce.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "org.eclipse.osgi",
+    "version": {
+      "major": 3,
+      "minor": 9,
+      "micro": 1,
+      "qualifier": "v20140110-1610"
+    },
+    "jarFileFingerprint": "4499d6104182d349f0ec59d6d166123aa5f09174",
+    "jarFileModificationDate": "2015-05-24T22:12:45.033-07:00",
+    "location": "C:\\Program Files (x86)\\Eclipse\\eclipse\\plugins\\org.eclipse.osgi_3.9.1.v20140110-1610.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "adaad4e14b3ed4495977c4cfdad72aee2adc45d8",
+    "jarFileModificationDate": "2015-11-29T16:39:53.309-07:00",
+    "location": "C:\\Program Files\\Java\\jre1.8.0_65\\lib\\jsse.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "Lab4_M2T_Sims",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": "qualifier"
+    },
+    "jarFileModificationDate": "2017-11-07T15:34:46.762-07:00",
+    "location": "C:\\Users\\Ryan\\Documents\\ECE373\\ece373\\Lab4_M2T_Sims\\src",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "510b3360662390f88590f9cd2b3947c742bf1cb7",
+    "jarFileModificationDate": "2017-11-10T00:23:33.833-07:00",
+    "location": "C:\\Program Files\\Java\\jdk1.8.0_151\\jre\\lib\\charsets.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "org.eclipse.equinox.common",
+    "version": {
+      "major": 3,
+      "minor": 6,
+      "micro": 200,
+      "qualifier": "v20130402-1505"
+    },
+    "jarFileFingerprint": "f930417b1602dafb370d7b9ed7871c87e0b355b1",
+    "jarFileModificationDate": "2015-05-24T22:12:55.747-07:00",
+    "location": "C:\\Program Files (x86)\\Eclipse\\eclipse\\plugins\\org.eclipse.equinox.common_3.6.200.v20130402-1505.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "00200daa55a27b3e7fd93b78155c9e003ebfd0e6",
+    "jarFileModificationDate": "2017-11-10T00:23:28.088-07:00",
+    "location": "C:\\Program Files\\Java\\jdk1.8.0_151\\jre\\lib\\ext\\jaccess.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "org.eclipse.acceleo.model",
+    "version": {
+      "major": 3,
+      "minor": 7,
+      "micro": 2,
+      "qualifier": "201708211328"
+    },
+    "jarFileFingerprint": "bbc9d77d546bff4eb47d21d3b7ea4775e1237a79",
+    "jarFileModificationDate": "2017-11-06T21:48:16.693-07:00",
+    "location": "C:\\Users\\Ryan\\.eclipse\\org.eclipse.platform_4.3.2_135501703_win32_win32_x86_64\\plugins\\org.eclipse.acceleo.model_3.7.2.201708211328.jar",
+    "javaRuntime": false
+  }
+]

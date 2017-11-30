@@ -8,8 +8,8 @@ import org.university.hardware.*;
 
 
 public class Course implements Serializable {
-	private String[] Week = {"Mon", "Tue", "Wed", "Thu", "Fri"};
-	private String[] Slot = {"8:00am to 9:15am",
+	private static final String[] Week = {"Mon", "Tue", "Wed", "Thu", "Fri"};
+	private static final String[] Slot = {"8:00am to 9:15am",
 							 "9:30am to 10:45am",
 							 "11:00am to 12:15pm", 
 							 "12:30pm to 1:45pm", 

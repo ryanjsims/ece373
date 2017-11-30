@@ -1,0 +1,10 @@
+package store.software;
+import java.util.HashMap;
+import store.objects.Product;
+
+public class ShoppingCart {
+	private HashMap<Product, Integer> products;
+	private double total;
+	
+	public 
+}

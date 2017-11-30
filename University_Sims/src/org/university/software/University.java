@@ -12,6 +12,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 
 import org.university.hardware.*;
+import org.university.people.Person;
 import org.university.people.Professor;
 import org.university.people.Staff;
 import org.university.people.Student;
@@ -27,6 +28,41 @@ public class University implements Serializable {
 	public University(){
 		departmentList = new ArrayList<Department>();
 		classroomList = new ArrayList<Classroom>();
+	}
+	
+	public Staff getStaff(String name){
+		Staff toReturn = null;
+		for(int i = 0; i < departmentList.size() && toReturn == null; i++){
+			Department dept = departmentList.get(i);
+			toReturn = dept.getStaff(name);
+		}		
+		return toReturn;
+	}
+	
+	public Professor getProf(String name){
+		Professor toReturn = null;
+		for(int i = 0; i < departmentList.size() && toReturn == null; i++){
+			Department dept = departmentList.get(i);
+			toReturn = dept.getProfessor(name);
+		}		
+		return toReturn;
+	}
+	
+	public Student getStudent(String name){
+		Student toReturn = null;
+		for(int i = 0; i < departmentList.size() && toReturn == null; i++){
+			Department dept = departmentList.get(i);
+			toReturn = dept.getStudent(name);
+		}		
+		return toReturn;
+	}
+	
+	public Department getDept(String name){
+		for(Department dept : departmentList){
+			if(dept.getDepartmentName().equals(name))
+				return dept;
+		}
+		return null;
 	}
 	
 	public static void saveData(University univ){

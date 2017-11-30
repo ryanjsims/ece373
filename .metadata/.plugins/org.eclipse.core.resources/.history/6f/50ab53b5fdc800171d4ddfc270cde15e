@@ -1,0 +1,46 @@
+package store.objects;
+import store.software.Rating;
+import java.util.ArrayList;
+
+public class Product {
+	private String name;
+	private int idNum, quantity;
+	private ArrayList<Rating> userRatings;
+	private double price;
+	
+	public Product(){
+		name = "";
+		idNum = -1;
+		quantity = 01;
+		userRatings = new ArrayList<Rating>();
+		price = -1;
+	}
+	
+	public void setName(String newName){
+		name = newName;
+	}
+	
+	public String getName(){
+		return name;
+	}
+	
+	public void setIDNum(int num){
+		idNum = num;
+	}
+	
+	public int getIDNum(){
+		return idNum;
+	}
+	
+	public void setQuantity(int newQuantity){
+		quantity = newQuantity;
+	}
+	
+	public int getQuantity(){
+		return quantity;
+	}
+	
+	public void addRating(Rating newRating){
+		userRatings.add(newRating);
+	}
+}

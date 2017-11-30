@@ -1,0 +1,27 @@
+package store.software;
+import java.util.HashMap;
+import store.objects.Product;
+
+public class ShoppingCart {
+	private HashMap<Product, Integer> products;
+	private double total;
+	
+	public ShoppingCart(){
+		products = new HashMap<Product, Integer>();
+		total = 0;
+	}
+	
+	public void addProduct(Product toAdd){
+		if(products.containsKey(toAdd))
+			products.put(toAdd, products.get(toAdd) + 1);
+		else
+			products.put(toAdd, 1);
+	}
+	
+	public void addProduct(Product toAdd, int quantity){
+		if(products.containsKey(toAdd))
+			products.put(toAdd, products.get(toAdd) + quantity);
+		else
+			products.put(toAdd, quantity);
+	}
+}

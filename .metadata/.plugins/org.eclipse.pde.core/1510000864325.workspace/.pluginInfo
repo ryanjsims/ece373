@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map>
+	<bundle bundleID="1327" class="Lab4_M2T_Sims.Activator" localization="OSGI-INF/l10n/bundle" name="Acceleo Lab4_M2T_Sims Module Runtime Plug-in" project="Lab4_M2T_Sims" provider="Eclipse Modeling Project"/>
+</map>

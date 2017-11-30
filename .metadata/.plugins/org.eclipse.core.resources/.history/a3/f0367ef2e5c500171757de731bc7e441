@@ -1,0 +1,39 @@
+[comment encoding = UTF-8 /]
+[module generate('http://www.eclipse.org/uml2/5.0.0/UML')]
+
+
+[comment : Created by Peter Hall for ECE 373 Lab 4/]
+
+[template public generate(aClass : Class)]
+[comment @main/]
+[file (aClass.name.concat('.java'), false)]
+
+public [if (aClass.isAbstract)]abstract [/if]class [aClass.name.toUpperFirst()/] [for (g: Generalization | aClass.generalization)]extends [g.general.name/] [/for]{
+[for (p: Property | aClass.attribute)]
+	[p.visibility/][comment private/] [p.type.name/] [p.name/];
+[/for]
+
+[for (p: Property | aClass.attribute) separator('\n')]
+	public [p.type.name/] get[p.name.toUpperFirst()/]() {
+		return this.[p.name/];
+	}
+[/for]
+
+[for (p: Property | aClass.attribute) separator('\n')]
+	public void set[p.name.toUpperFirst()/]([p.type.name/] [p.name/]) {
+		this.[p.name/] = [p.name/];
+	}
+[/for]
+
+[for (o: Operation | aClass.ownedOperation) separator('\n')]
+	[if (o.isAbstract)]
+	[o.visibility/] abstract [for (op: Parameter | o.ownedParameter)][if (op.direction.toString().equalsIgnoreCase('return'))][o.type.name/][comment][else]void[/comment][/if][/for] [o.name/]([for (op: Parameter | o.ownedParameter)][if (op.direction.toString().equalsIgnoreCase('return')._not())][op.type.name/] [op.name/][/if] [/for]);
+	[else]
+	[o.visibility/] [for (op: Parameter | o.ownedParameter)][if (op.direction.toString().equalsIgnoreCase('return'))][o.type.name/][comment][else]void[/comment][/if][/for] [o.name/]([for (op: Parameter | o.ownedParameter)][if (op.direction.toString().equalsIgnoreCase('return')._not())][op.type.name/] [op.name/][/if] [/for]) {
+		// TODO should be implemented
+	}
+	[/if]
+[/for]
+}
+[/file]
+[/template]

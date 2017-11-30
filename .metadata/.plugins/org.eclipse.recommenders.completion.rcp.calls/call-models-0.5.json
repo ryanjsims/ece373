@@ -1,0 +1,22 @@
+{
+  "C:\\Users\\Ryan\\Documents\\ECE373\\ece373\\University_Sims\\src": {
+    "location": "C:\\Users\\Ryan\\Documents\\ECE373\\ece373\\University_Sims\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027C:\\Users\\Ryan\\Documents\\ECE373\\ece373\\University_Sims\\src\u0027. Skipped."
+  },
+  "C:\\Program Files\\Java\\jre1.8.0_65\\lib\\rt.jar": {
+    "location": "C:\\Program Files\\Java\\jre1.8.0_65\\lib\\rt.jar",
+    "status": "UNRESOLVED",
+    "error": "Could not transfer artifact jre:jre:zip:call:1.0.0 from/to remote-models (http://download.eclipse.org/recommenders/models/kepler/): Error transferring file, server returned status code 307"
+  },
+  "C:\\Program Files\\Java\\jdk1.8.0_151\\jre\\lib\\rt.jar": {
+    "location": "C:\\Program Files\\Java\\jdk1.8.0_151\\jre\\lib\\rt.jar",
+    "status": "UNRESOLVED",
+    "error": "Could not transfer artifact jre:jre:zip:call:1.0.0 from/to remote-models (http://download.eclipse.org/recommenders/models/kepler/): Error transferring file, server returned status code 307"
+  },
+  "C:\\Users\\Ryan\\Documents\\ECE373\\ECE373GroupProject\\GroceryStore\\src": {
+    "location": "C:\\Users\\Ryan\\Documents\\ECE373\\ECE373GroupProject\\GroceryStore\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027C:\\Users\\Ryan\\Documents\\ECE373\\ECE373GroupProject\\GroceryStore\\src\u0027. Skipped."
+  }
+}

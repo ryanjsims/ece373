@@ -57,6 +57,24 @@ public abstract class Person implements Serializable {
 		return false;
 	}
 	
+	public boolean detectConflictNoPrint(Course aCourse){
+		for(Course course : courses){
+			if(course.compareSchedules(aCourse)){
+				return true;
+			}
+		}
+		return false;
+	}
+	
+	public Course getConflict(Course aCourse){
+		for(Course course : courses){
+			if(course.compareSchedules(aCourse)){
+				return course;
+			}
+		}
+		return null;
+	}
+	
 	public void printSchedule(){
 		for(int time : getTimeSlots())
 			for(Course crs : courses)
