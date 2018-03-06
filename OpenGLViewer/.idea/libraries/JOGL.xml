@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="JOGL">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../JOGL/gluegen-rt-natives-linux-amd64.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../JOGL/gluegen-rt-natives-linux-i586.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../JOGL/gluegen-rt-natives-windows-amd64.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../JOGL/gluegen-rt-natives-windows-i586.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../JOGL/gluegen-rt.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../JOGL/gluegen.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../JOGL/jogl-all-natives-linux-amd64.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../JOGL/jogl-all-natives-linux-i586.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../JOGL/jogl-all-natives-windows-amd64.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../JOGL/jogl-all-natives-windows-i586.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../JOGL/jogl-all.jar!/" />
+      <root url="file://$PROJECT_DIR$/../JOGL" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/../JOGL" recursive="false" />
+  </library>
+</component>
