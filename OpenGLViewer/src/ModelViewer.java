@@ -1,25 +1,27 @@
-//import com.jogamp.newt.event.MouseEvent;
-//import com.jogamp.newt.event.MouseListener;
+import com.jogamp.newt.Display;
+import com.jogamp.newt.NewtFactory;
+import com.jogamp.newt.Screen;
+import com.jogamp.newt.opengl.GLWindow;
 import com.jogamp.opengl.*;
 import com.jogamp.opengl.awt.GLCanvas;
 import com.jogamp.opengl.glu.GLU;
 import com.jogamp.opengl.util.Animator;
 
-import javax.swing.*;
+import com.jogamp.newt.Window;
+import com.jogamp.newt.event.*;
+
+/*import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-import java.awt.image.BufferedImage;
+import java.awt.image.BufferedImage;*/
 
-import static com.jogamp.opengl.GLProfile.GL4;
-
-public class ModelViewer extends Frame implements GLEventListener{
+public class ModelViewer implements GLEventListener, WindowListener, KeyListener, MouseListener {
     /*
      * TODO: Make this the GUI class after designing structure for other classes as needed.
      *       Look at documentation for OpenGL hooks for java.
      * */
 
     private GLU glu = new GLU();
-    private Point center;
     private float fov = 45.0f,
             asp = 1.0f,
             hAngle = 3.14f,
@@ -27,7 +29,7 @@ public class ModelViewer extends Frame implements GLEventListener{
             mouseSpeed = 0.05f,
             speed = 0.1f;
 
-    private int x = 60, y = 60, width = 1024, height = 768;
+    private int x = 0, y = 0, width = 2560, height = 1600;
     private long currTime, prevTime;
     private Vector3D loc;
 
@@ -51,16 +53,17 @@ public class ModelViewer extends Frame implements GLEventListener{
 
     private mouseInput m;
     private GLCanvas canvas;
+    private Window window;
 
     public static void main(String[] args){
         ModelViewer viewer = new ModelViewer();
-        viewer.setVisible(true);
+
 
     }
 
     public ModelViewer(){
-        super("3D Model Viewer");
-        setUndecorated(true);
+        setupJOGL();
+        window.setUndecorated(true);
         setLayout(new BorderLayout());
         addWindowListener(new WindowAdapter() {
             @Override
@@ -71,16 +74,21 @@ public class ModelViewer extends Frame implements GLEventListener{
             }
         });
         loc = new Vector3D(0, 0, 0);
-        setLocation(x, y);
+        //setLocation(x, y);
         setVisible(true);
 
-        setupJOGL();
+
     }
 
     private void setupJOGL(){
-        GLCapabilities caps = new GLCapabilities(GLProfile.get(GLProfile.GL2));
+        GLProfile glp = GLProfile.getDefault();
+        GLCapabilities caps = new GLCapabilities(glp);
         caps.setDoubleBuffered(true);
         caps.setHardwareAccelerated(true);
+        Display display = NewtFactory.createDisplay(null);
+        Screen screen = NewtFactory.createScreen(display, 0);
+        window = NewtFactory.createWindow(screen, caps);
+
         canvas = new GLCanvas(caps);
         canvas.addGLEventListener(this);
 
@@ -285,6 +293,101 @@ public class ModelViewer extends Frame implements GLEventListener{
             float z = this.x * other.y - this.y * other.x;
             return new Vector3D(x, y, z);
         }
+    }
+
+
+    /*
+    * Key Listener Methods
+    * */
+    @Override
+    public void keyPressed(KeyEvent keyEvent) {
+
+    }
+
+    @Override
+    public void keyReleased(KeyEvent keyEvent) {
+
+    }
+
+    /*
+    * Mouse Listener Methods
+    * */
+    @Override
+    public void mouseClicked(MouseEvent mouseEvent) {
+
+    }
+
+    @Override
+    public void mouseEntered(MouseEvent mouseEvent) {
+
+    }
+
+    @Override
+    public void mouseExited(MouseEvent mouseEvent) {
+
+    }
+
+    @Override
+    public void mousePressed(MouseEvent mouseEvent) {
+
+    }
+
+    @Override
+    public void mouseReleased(MouseEvent mouseEvent) {
+
+    }
+
+    @Override
+    public void mouseMoved(MouseEvent mouseEvent) {
+
+    }
+
+    @Override
+    public void mouseDragged(MouseEvent mouseEvent) {
+
+    }
+
+    @Override
+    public void mouseWheelMoved(MouseEvent mouseEvent) {
+
+    }
+
+    /*
+    * Window Listener Methods
+    * */
+    @Override
+    public void windowResized(WindowEvent windowEvent) {
+
+    }
+
+    @Override
+    public void windowMoved(WindowEvent windowEvent) {
+
+    }
+
+    @Override
+    public void windowDestroyNotify(WindowEvent windowEvent) {
+
+    }
+
+    @Override
+    public void windowDestroyed(WindowEvent windowEvent) {
+
+    }
+
+    @Override
+    public void windowGainedFocus(WindowEvent windowEvent) {
+
+    }
+
+    @Override
+    public void windowLostFocus(WindowEvent windowEvent) {
+
+    }
+
+    @Override
+    public void windowRepaint(WindowUpdateEvent windowUpdateEvent) {
+
     }
 
     private class KeyInput implements KeyListener{

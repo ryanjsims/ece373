@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5ba256d1-f606-4e18-9280-f6a53b9c7b68" name="Default" comment="Added 3D Cube, movement, and camera motion">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/OpenGLViewer.iml" afterPath="$PROJECT_DIR$/OpenGLViewer.iml" />
-      <change beforePath="$PROJECT_DIR$/out/production/OpenGLViewer/ModelViewer$1.class" afterPath="$PROJECT_DIR$/out/production/OpenGLViewer/ModelViewer$1.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/OpenGLViewer/ModelViewer.class" afterPath="$PROJECT_DIR$/out/production/OpenGLViewer/ModelViewer.class" />
       <change beforePath="$PROJECT_DIR$/src/ModelViewer.java" afterPath="$PROJECT_DIR$/src/ModelViewer.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -21,15 +18,25 @@
       <file leaf-file-name="ModelViewer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ModelViewer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="316" column="35" lean-forward="false" selection-start-line="316" selection-start-column="35" selection-end-line="316" selection-end-column="35" />
+            <state relative-caret-position="765">
+              <caret line="45" column="26" lean-forward="true" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
               <folding>
-                <element signature="e#0#12745#0" expanded="true" />
                 <element signature="imports" expanded="true" />
-                <element signature="e#1682#1903#0" expanded="true" />
-                <element signature="e#1902#1903#0" expanded="true" />
-                <element signature="e#11706#11707#0" expanded="true" />
-                <element signature="e#11766#11767#0" expanded="true" />
+                <element signature="method#main#0;class#ModelViewer#0" expanded="false" />
+                <element signature="method#ModelViewer#0;class#ModelViewer#0" expanded="false" />
+                <element signature="e#1745#1966#0" expanded="true" />
+                <element signature="e#1965#1966#0" expanded="true" />
+                <element signature="method#setupJOGL#0;class#ModelViewer#0" expanded="false" />
+                <element signature="method#init#0;class#ModelViewer#0" expanded="false" />
+                <element signature="method#dispose#0;class#ModelViewer#0" expanded="false" />
+                <element signature="method#display#0;class#ModelViewer#0" expanded="false" />
+                <element signature="method#reshape#0;class#ModelViewer#0" expanded="false" />
+                <element signature="method#setView#0;class#ModelViewer#0" expanded="false" />
+                <element signature="class#Vector3D#0;class#ModelViewer#0" expanded="false" />
+                <element signature="class#KeyInput#0;class#ModelViewer#0" expanded="false" />
+                <element signature="class#mouseInput#0;class#ModelViewer#0" expanded="false" />
+                <element signature="e#13415#13416#0" expanded="true" />
+                <element signature="e#13475#13476#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -301,7 +308,9 @@
     <option name="LAST_COMMIT_MESSAGE" value="Added 3D Cube, movement, and camera motion" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -310,12 +319,22 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#12745#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#1682#1903#0" expanded="true" />
-            <element signature="e#1902#1903#0" expanded="true" />
-            <element signature="e#11706#11707#0" expanded="true" />
-            <element signature="e#11766#11767#0" expanded="true" />
+            <element signature="method#main#0;class#ModelViewer#0" expanded="false" />
+            <element signature="method#ModelViewer#0;class#ModelViewer#0" expanded="false" />
+            <element signature="e#1745#1966#0" expanded="true" />
+            <element signature="e#1965#1966#0" expanded="true" />
+            <element signature="method#setupJOGL#0;class#ModelViewer#0" expanded="false" />
+            <element signature="method#init#0;class#ModelViewer#0" expanded="false" />
+            <element signature="method#dispose#0;class#ModelViewer#0" expanded="false" />
+            <element signature="method#display#0;class#ModelViewer#0" expanded="false" />
+            <element signature="method#reshape#0;class#ModelViewer#0" expanded="false" />
+            <element signature="method#setView#0;class#ModelViewer#0" expanded="false" />
+            <element signature="class#Vector3D#0;class#ModelViewer#0" expanded="false" />
+            <element signature="class#KeyInput#0;class#ModelViewer#0" expanded="false" />
+            <element signature="class#mouseInput#0;class#ModelViewer#0" expanded="false" />
+            <element signature="e#13415#13416#0" expanded="true" />
+            <element signature="e#13475#13476#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -346,15 +365,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ModelViewer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="316" column="35" lean-forward="false" selection-start-line="316" selection-start-column="35" selection-end-line="316" selection-end-column="35" />
+        <state relative-caret-position="765">
+          <caret line="45" column="26" lean-forward="true" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
           <folding>
-            <element signature="e#0#12745#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#1682#1903#0" expanded="true" />
-            <element signature="e#1902#1903#0" expanded="true" />
-            <element signature="e#11706#11707#0" expanded="true" />
-            <element signature="e#11766#11767#0" expanded="true" />
+            <element signature="method#main#0;class#ModelViewer#0" expanded="false" />
+            <element signature="method#ModelViewer#0;class#ModelViewer#0" expanded="false" />
+            <element signature="e#1745#1966#0" expanded="true" />
+            <element signature="e#1965#1966#0" expanded="true" />
+            <element signature="method#setupJOGL#0;class#ModelViewer#0" expanded="false" />
+            <element signature="method#init#0;class#ModelViewer#0" expanded="false" />
+            <element signature="method#dispose#0;class#ModelViewer#0" expanded="false" />
+            <element signature="method#display#0;class#ModelViewer#0" expanded="false" />
+            <element signature="method#reshape#0;class#ModelViewer#0" expanded="false" />
+            <element signature="method#setView#0;class#ModelViewer#0" expanded="false" />
+            <element signature="class#Vector3D#0;class#ModelViewer#0" expanded="false" />
+            <element signature="class#KeyInput#0;class#ModelViewer#0" expanded="false" />
+            <element signature="class#mouseInput#0;class#ModelViewer#0" expanded="false" />
+            <element signature="e#13415#13416#0" expanded="true" />
+            <element signature="e#13475#13476#0" expanded="true" />
           </folding>
         </state>
       </provider>
