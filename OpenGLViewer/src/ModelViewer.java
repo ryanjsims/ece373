@@ -3,24 +3,18 @@ import com.jogamp.newt.NewtFactory;
 import com.jogamp.newt.Screen;
 import com.jogamp.newt.opengl.GLWindow;
 import com.jogamp.opengl.*;
-import com.jogamp.opengl.awt.GLCanvas;
 import com.jogamp.opengl.glu.GLU;
 import com.jogamp.opengl.util.Animator;
 
-import com.jogamp.newt.Window;
 import com.jogamp.newt.event.*;
 
-/*import javax.swing.*;
-import java.awt.*;
-import java.awt.event.*;
-import java.awt.image.BufferedImage;*/
 
 public class ModelViewer implements GLEventListener, WindowListener, KeyListener, MouseListener {
     /*
      * TODO: Make this the GUI class after designing structure for other classes as needed.
      *       Look at documentation for OpenGL hooks for java.
      * */
-
+    private Animator anim;
     private GLU glu = new GLU();
     private float fov = 45.0f,
             asp = 1.0f,
@@ -29,7 +23,7 @@ public class ModelViewer implements GLEventListener, WindowListener, KeyListener
             mouseSpeed = 0.05f,
             speed = 0.1f;
 
-    private int x = 0, y = 0, width = 2560, height = 1600;
+    private int x = 0, y = 0, width = 800, height = 600;
     private long currTime, prevTime;
     private Vector3D loc;
 
@@ -51,9 +45,7 @@ public class ModelViewer implements GLEventListener, WindowListener, KeyListener
             KeyEvent.VK_SPACE
     };
 
-    private mouseInput m;
-    private GLCanvas canvas;
-    private Window window;
+    private GLWindow window;
 
     public static void main(String[] args){
         ModelViewer viewer = new ModelViewer();
@@ -64,20 +56,10 @@ public class ModelViewer implements GLEventListener, WindowListener, KeyListener
     public ModelViewer(){
         setupJOGL();
         window.setUndecorated(true);
-        setLayout(new BorderLayout());
-        addWindowListener(new WindowAdapter() {
-            @Override
-            public void windowClosing(WindowEvent e) {
-                super.windowClosing(e);
-                dispose();
-                System.exit(0);
-            }
-        });
+        window.addWindowListener(this);
         loc = new Vector3D(0, 0, 0);
-        //setLocation(x, y);
-        setVisible(true);
-
-
+        window.setVisible(true);
+        window.setFullscreen(true);
     }
 
     private void setupJOGL(){
@@ -87,29 +69,17 @@ public class ModelViewer implements GLEventListener, WindowListener, KeyListener
         caps.setHardwareAccelerated(true);
         Display display = NewtFactory.createDisplay(null);
         Screen screen = NewtFactory.createScreen(display, 0);
-        window = NewtFactory.createWindow(screen, caps);
+        window = GLWindow.create(screen, caps);
 
-        canvas = new GLCanvas(caps);
-        canvas.addGLEventListener(this);
+        window.addGLEventListener(this);
+        window.addMouseListener(this);
+        window.addKeyListener(this);
+        window.addWindowListener(this);
 
-        m = new mouseInput();
-        canvas.addMouseListener(m);
-        canvas.addMouseMotionListener(m);
-        canvas.addMouseWheelListener(m);
+        window.setSize(width, height);
 
-        canvas.addKeyListener(new KeyInput());
-
-        canvas.setPreferredSize(new Dimension(width, height));
-        center = new Point(width / 2, height / 2);
-        this.
-
-        add(canvas, BorderLayout.CENTER);
-        canvas.requestFocus();
-        pack();
-        SwingUtilities.convertPointToScreen(center, this);
-
-        System.out.printf("Top left corner: %d %d\n", x, y);
-        Animator anim = new Animator(canvas);
+        window.requestFocus();
+        anim = new Animator(window);
         anim.start();
     }
 
@@ -129,7 +99,7 @@ public class ModelViewer implements GLEventListener, WindowListener, KeyListener
 
     @Override
     public void dispose(GLAutoDrawable glAutoDrawable) {
-        //dispose();
+        window.destroy();
     }
 
     @Override
@@ -147,8 +117,6 @@ public class ModelViewer implements GLEventListener, WindowListener, KeyListener
 
         gl.glTranslatef( 0, 0, -5 );
 
-        //gl.glRotatef(hAngle, 1, 0, 0);
-        //gl.glRotatef(vAngle, 0, 1, 0);
         gl.glBegin(GL2.GL_QUADS);
 
         gl.glColor3f(1f,0f,0f); //red color
@@ -242,71 +210,47 @@ public class ModelViewer implements GLEventListener, WindowListener, KeyListener
         glu.gluLookAt(loc.x, loc.y, loc.z, point.x, point.y, point.z, up.x, up.y, up.z);
     }
 
-    private class Vector3D {
-        public float x, y, z;
-        public Vector3D(float x, float y, float z){
-            this.x = x;
-            this.y = y;
-            this.z = z;
-        }
-
-        /**
-         * Constructs a Vector3D from spherical coordinates
-         * @param hAngle is the horizontal angle of the vector
-         * @param vAngle is the vertical angle of the vector
-         */
-        public Vector3D(float hAngle, float vAngle){
-            x = (float)Math.cos(vAngle) * (float)Math.sin(hAngle);
-            y = (float)Math.sin(vAngle);
-            z = (float)Math.cos(vAngle) * (float)Math.cos(hAngle);
-        }
-
-        public void translate(float dx, float dy, float dz){
-            x += dx;
-            y += dy;
-            z += dz;
-        }
-
-        public void translate(Vector3D other){
-            x += other.x;
-            y += other.y;
-            z += other.z;
-        }
-
-        public Vector3D add(Vector3D other){
-            float x = this.x + other.x;
-            float y = this.y + other.y;
-            float z = this.z + other.z;
-            return new Vector3D(x, y, z);
-        }
-
-        public Vector3D sMult(float scalar){
-            float x = this.x * scalar;
-            float y = this.y * scalar;
-            float z = this.z * scalar;
-            return new Vector3D(x, y, z);
-        }
-
-        public Vector3D cross(Vector3D other){
-            float x = this.y * other.z - this.z * other.y;
-            float y = this.z * other.x - this.x * other.z;
-            float z = this.x * other.y - this.y * other.x;
-            return new Vector3D(x, y, z);
-        }
-    }
-
-
     /*
     * Key Listener Methods
     * */
     @Override
-    public void keyPressed(KeyEvent keyEvent) {
-
+    public void keyPressed(KeyEvent e) {
+        if(e.isAutoRepeat()){
+            return;
+        }
+        if(e.getKeyCode() == KeyEvent.VK_ESCAPE){
+            window.destroy();
+            System.exit(0);
+        }
+        for(int i = 0; i < dirKeys.length; i++){
+            if(e.getKeyCode() == dirKeys[i]){
+                movingDir[i] = true;
+            }
+        }
+        if(e.getKeyCode() == KeyEvent.VK_ALT ){
+            if(window.getMouseListeners().length > 0) {
+                window.removeMouseListener(this);
+                window.setPointerVisible(true);
+                window.confinePointer(false);
+            }
+            else {
+                window.addMouseListener(this);
+                window.setPointerVisible(false);
+                window.confinePointer(true);
+            }
+        }
     }
 
     @Override
-    public void keyReleased(KeyEvent keyEvent) {
-
+    public void keyReleased(KeyEvent e) {
+        if(e.isAutoRepeat()){
+            return;
+        }
+        for(int i = 0; i < dirKeys.length; i++){
+            if(e.getKeyCode() == dirKeys[i]){
+                movingDir[i] = false;
+            }
+        }
     }
 
     /*
@@ -319,12 +263,14 @@ public class ModelViewer implements GLEventListener, WindowListener, KeyListener
 
     @Override
     public void mouseEntered(MouseEvent mouseEvent) {
-
+        window.setPointerVisible(false);
+        window.confinePointer(true);
+        prevTime = System.currentTimeMillis();
     }
 
     @Override
     public void mouseExited(MouseEvent mouseEvent) {
-
+        window.setPointerVisible(true);
     }
 
     @Override
@@ -339,7 +285,15 @@ public class ModelViewer implements GLEventListener, WindowListener, KeyListener
 
     @Override
     public void mouseMoved(MouseEvent mouseEvent) {
-
+        int mouseX = mouseEvent.getX(), mouseY = mouseEvent.getY();
+        currTime = System.currentTimeMillis();
+        float dt = (float)(currTime - prevTime) / 1000f;
+        window.warpPointer(width / 2, height / 2);
+        float dH = mouseSpeed * dt * (width / 2 - mouseX);
+        float dV = mouseSpeed * dt * (height / 2 - mouseY );
+        hAngle -= dH;
+        vAngle -= dV;
+        prevTime = currTime;
     }
 
     @Override
@@ -357,7 +311,8 @@ public class ModelViewer implements GLEventListener, WindowListener, KeyListener
     * */
     @Override
     public void windowResized(WindowEvent windowEvent) {
-
+        width = window.getWidth();
+        height = window.getHeight();
     }
 
     @Override
@@ -367,12 +322,12 @@ public class ModelViewer implements GLEventListener, WindowListener, KeyListener
 
     @Override
     public void windowDestroyNotify(WindowEvent windowEvent) {
-
+        anim.stop();
     }
 
     @Override
     public void windowDestroyed(WindowEvent windowEvent) {
-
+        System.exit(0);
     }
 
     @Override
@@ -389,119 +344,4 @@ public class ModelViewer implements GLEventListener, WindowListener, KeyListener
     public void windowRepaint(WindowUpdateEvent windowUpdateEvent) {
 
     }
-
-    private class KeyInput implements KeyListener{
-        @Override
-        public void keyTyped(KeyEvent e) {
-
-        }
-
-        @Override
-        public void keyPressed(KeyEvent e) {
-            //System.out.printf("Key: %d\n", e.getKeyCode());
-            if(e.getKeyCode() == KeyEvent.VK_ESCAPE){
-                dispose();
-                System.exit(0);
-            }
-            for(int i = 0; i < dirKeys.length; i++){
-                if(e.getKeyCode() == dirKeys[i]){
-                    movingDir[i] = true;
-                }
-            }
-            if(e.getKeyCode() == KeyEvent.VK_ALT ){
-                if(canvas.getMouseMotionListeners().length > 0) {
-                    canvas.removeMouseMotionListener(m);
-                    setCursor(Cursor.getDefaultCursor());
-                }
-                else {
-                    setCursor(getToolkit().createCustomCursor(
-                            new BufferedImage(1, 1, BufferedImage.TYPE_INT_ARGB ),
-                            new Point(),
-                            null));
-                    canvas.addMouseMotionListener(m);
-                    canvas.requestFocus();
-                }
-            }
-        }
-
-        @Override
-        public void keyReleased(KeyEvent e) {
-            for(int i = 0; i < dirKeys.length; i++){
-                if(e.getKeyCode() == dirKeys[i]){
-                    movingDir[i] = false;
-                }
-            }
-        }
-    }
-
-    private class mouseInput extends MouseAdapter{
-        Robot rbt;
-
-        public mouseInput(){
-            super();
-            prevTime = System.currentTimeMillis();
-            try {
-                rbt = new Robot();
-            } catch(AWTException e){
-                e.printStackTrace();
-                System.exit(1);
-            }
-        }
-        @Override
-        public void mouseClicked(MouseEvent mouseEvent) {
-            System.out.printf("click %d %d\n", mouseEvent.getX(), mouseEvent.getY());
-        }
-
-        @Override
-        public void mouseEntered(MouseEvent mouseEvent) {
-            setCursor(getToolkit().createCustomCursor(
-                    new BufferedImage(1, 1, BufferedImage.TYPE_INT_ARGB ),
-                    new Point(),
-                    null));
-            prevTime = System.currentTimeMillis();
-        }
-
-        @Override
-        public void mouseExited(MouseEvent mouseEvent) {
-            setCursor(Cursor.getDefaultCursor());
-        }
-
-        @Override
-        public void mousePressed(MouseEvent mouseEvent) {
-
-        }
-
-        @Override
-        public void mouseReleased(MouseEvent mouseEvent) {
-
-        }
-
-        @Override
-        public void mouseMoved(MouseEvent mouseEvent) {
-            int mouseX = mouseEvent.getX(), mouseY = mouseEvent.getY();
-            currTime = System.currentTimeMillis();
-            float dt = (float)(currTime - prevTime) / 1000f;
-            rbt.mouseMove(center.x, center.y);
-            float dH = mouseSpeed * dt * (width / 2 - mouseX);
-            float dV = mouseSpeed * dt * (height / 2 - mouseY );
-            hAngle -= dH;
-            vAngle -= dV;
-            //System.out.printf("%f %f\n%d %d\n", dH, dV, mouseX, mouseY);
-            prevTime = currTime;
-
-        }
-
-        @Override
-        public void mouseDragged(MouseEvent mouseEvent) {
-
-        }
-
-        @Override
-        public void mouseWheelMoved(MouseWheelEvent mouseEvent) {
-
-        }
-    }
-
-
-
 }
