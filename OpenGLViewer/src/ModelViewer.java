@@ -10,22 +10,32 @@ import com.jogamp.newt.event.*;
 
 
 public class ModelViewer implements GLEventListener, WindowListener, KeyListener, MouseListener {
-    /*
-     * TODO: Make this the GUI class after designing structure for other classes as needed.
-     *       Look at documentation for OpenGL hooks for java.
-     * */
+
     private Animator anim;
     private GLU glu = new GLU();
     private float fov = 45.0f,
             asp = 1.0f,
             hAngle = 3.14f,
-            vAngle = 0f,
-            mouseSpeed = 0.05f,
-            speed = 0.1f;
+            vAngle = 0f;
+    private static final float mouseSpeed = 0.05f, speed = 0.1f;
 
-    private int x = 0, y = 0, width = 800, height = 600;
-    private long currTime, prevTime;
+    private int width = 800, height = 600;
+    private long prevTime;
     private Vector3D loc;
+
+    private Vector3D vel = new Vector3D(0, 0, 0);
+    private Vector3D right = new Vector3D(0, 0, 0);
+    private Vector3D dir = new Vector3D(hAngle, vAngle);
+    private Vector3D up = new Vector3D(0, 0, 0);
+    private Vector3D point = new Vector3D(0, 0, 0);
+    private Vector3D moves[] = {
+            new Vector3D(0, 0, 0),
+            new Vector3D(0, 0, 0),
+            new Vector3D(0, 0, 0),
+            new Vector3D(0, 0, 0),
+            new Vector3D(0, 0, 0),
+            new Vector3D(0, 0, 0)
+    };
 
     private boolean movingDir[] = {
             false,
@@ -49,16 +59,14 @@ public class ModelViewer implements GLEventListener, WindowListener, KeyListener
 
     public static void main(String[] args){
         ModelViewer viewer = new ModelViewer();
-
-
+        viewer.window.setVisible(true);
     }
 
-    public ModelViewer(){
+    private ModelViewer(){
         setupJOGL();
         window.setUndecorated(true);
         window.addWindowListener(this);
         loc = new Vector3D(0, 0, 0);
-        window.setVisible(true);
         window.setFullscreen(true);
     }
 
@@ -99,7 +107,6 @@ public class ModelViewer implements GLEventListener, WindowListener, KeyListener
 
     @Override
     public void dispose(GLAutoDrawable glAutoDrawable) {
-        window.destroy();
     }
 
     @Override
@@ -165,8 +172,6 @@ public class ModelViewer implements GLEventListener, WindowListener, KeyListener
 
         this.width = width;
         this.height = height;
-        this.x = x;
-        this.y = y;
 
         if(this.height <= 0)
             this.height = 1;
@@ -183,30 +188,30 @@ public class ModelViewer implements GLEventListener, WindowListener, KeyListener
         gl.glLoadIdentity();
     }
 
-    public void setView(){
-        Vector3D vel = new Vector3D(0, 0, 0);
-        Vector3D right = new Vector3D(
+    private void setView(){
+        vel.setCoords(0, 0, 0);
+        right.setCoords(
                 (float)Math.sin((double)hAngle - 3.14/2.0),
                 0,
                 (float)Math.cos((double)hAngle - 3.14/2.0)
         );
-        Vector3D dir = new Vector3D(hAngle, vAngle);
-        Vector3D up = dir.cross(right);
-        Vector3D moves[] = {
-                dir.sMult(speed),
-                right.sMult(speed),
-                dir.sMult(-speed),
-                right.sMult(-speed),
-                up.sMult(-speed),
-                up.sMult(speed)
-        };
+        dir.setCoords(hAngle, vAngle);
+        up.cross(dir, right);
+
+        moves[0].sMult(dir, speed);
+        moves[1].sMult(right, speed);
+        moves[2].sMult(dir, -speed);
+        moves[3].sMult(right, -speed);
+        moves[4].sMult(up, -speed);
+        moves[5].sMult(up, speed);
+
         for(int i = 0; i < movingDir.length; i++){
             if(movingDir[i]){
                 vel.translate(moves[i]);
             }
         }
         loc.translate(vel);
-        Vector3D point = loc.add(dir);
+        point.add(loc, dir);
         glu.gluLookAt(loc.x, loc.y, loc.z, point.x, point.y, point.z, up.x, up.y, up.z);
     }
 
@@ -286,7 +291,7 @@ public class ModelViewer implements GLEventListener, WindowListener, KeyListener
     @Override
     public void mouseMoved(MouseEvent mouseEvent) {
         int mouseX = mouseEvent.getX(), mouseY = mouseEvent.getY();
-        currTime = System.currentTimeMillis();
+        long currTime = System.currentTimeMillis();
         float dt = (float)(currTime - prevTime) / 1000f;
         window.warpPointer(width / 2, height / 2);
         float dH = mouseSpeed * dt * (width / 2 - mouseX);
