@@ -15,7 +15,10 @@
       <root url="file://$PROJECT_DIR$/../JOGL" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../JOGL/jogl-java-src.zip!/" />
+      <root url="jar://$PROJECT_DIR$/../JOGL/gluegen-java-src.zip!/" />
+    </SOURCES>
     <jarDirectory url="file://$PROJECT_DIR$/../JOGL" recursive="false" />
   </library>
 </component>

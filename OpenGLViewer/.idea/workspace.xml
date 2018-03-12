@@ -2,12 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ba256d1-f606-4e18-9280-f6a53b9c7b68" name="Default" comment="Added 3D Cube, movement, and camera motion">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/GLBModelReader.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/com_google_code_gson_gson_2_8_2.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/shaders/cyan.fp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/shaders/light.fp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/shaders/orange.fp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/shaders/toy.fp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/shaders/vertex.vp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/GLCamera.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/GLMesh.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/GLModel.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/GLShader.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/GLVertex.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/ModelViewerGL4.java" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/JOGL.xml" afterPath="$PROJECT_DIR$/.idea/libraries/JOGL.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/JOGL_build.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/OpenGLViewer/ModelViewer.class" afterPath="$PROJECT_DIR$/out/production/OpenGLViewer/ModelViewer.class" />
-      <change beforePath="$PROJECT_DIR$/src/ModelViewer.java" afterPath="$PROJECT_DIR$/src/ModelViewer.java" />
-      <change beforePath="$PROJECT_DIR$/src/Vector3D.java" afterPath="$PROJECT_DIR$/src/Vector3D.java" />
+      <change beforePath="$PROJECT_DIR$/OpenGLViewer.iml" afterPath="$PROJECT_DIR$/OpenGLViewer.iml" />
+      <change beforePath="$PROJECT_DIR$/out/production/OpenGLViewer/ModelViewer.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/GLBModelReader.java" afterPath="$PROJECT_DIR$/src/GLBModelReader.java" />
+      <change beforePath="$PROJECT_DIR$/src/ModelViewer.java" afterPath="$PROJECT_DIR$/src/ModelViewerGL2.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,30 +31,32 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ModelViewer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ModelViewer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="95" column="43" lean-forward="false" selection-start-line="95" selection-start-column="43" selection-end-line="95" selection-end-column="43" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#8751#8752#0" expanded="true" />
-                <element signature="e#8797#8798#0" expanded="true" />
-                <element signature="e#9950#9951#0" expanded="true" />
-                <element signature="e#9977#9978#0" expanded="true" />
-                <element signature="e#10051#10052#0" expanded="true" />
-                <element signature="e#10081#10082#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf>
       <file leaf-file-name="GLBModelReader.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GLBModelReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="799">
-              <caret line="47" column="52" lean-forward="false" selection-start-line="47" selection-start-column="52" selection-end-line="47" selection-end-column="52" />
+            <state relative-caret-position="258">
+              <caret line="168" column="28" lean-forward="true" selection-start-line="168" selection-start-column="28" selection-end-line="168" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GLModel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GLModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="4" column="6" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GLMesh.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/GLMesh.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="600">
+              <caret line="75" column="29" lean-forward="true" selection-start-line="75" selection-start-column="29" selection-end-line="75" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -49,11 +64,53 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Vector3D.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Vector3D.java">
+      <file leaf-file-name="ModelViewerGL4.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ModelViewerGL4.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="485">
-              <caret line="53" column="27" lean-forward="false" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="27" />
+            <state relative-caret-position="350">
+              <caret line="234" column="40" lean-forward="true" selection-start-line="197" selection-start-column="8" selection-end-line="234" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2423#2424#0" expanded="true" />
+                <element signature="e#2457#2458#0" expanded="true" />
+                <element signature="e#11664#11665#0" expanded="true" />
+                <element signature="e#11691#11692#0" expanded="true" />
+                <marker date="1520796377985" expanded="false" signature="3309:3823" ph="..." />
+                <marker date="1520796377985" expanded="false" signature="3876:4637" ph="..." />
+                <marker date="1520796377985" expanded="false" signature="4680:7314" ph="..." />
+                <marker date="1520796377985" expanded="false" signature="7354:7667" ph="..." />
+                <marker date="1520796377985" expanded="false" signature="8332:8476" ph="..." />
+                <marker date="1520796377985" expanded="false" signature="9297:9647" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="vertex.vp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shaders/vertex.vp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="4" lean-forward="true" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="toy.fp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shaders/toy.fp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="36" column="38" lean-forward="true" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="light.fp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shaders/light.fp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -64,9 +121,15 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="GLSL Shader" />
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>print</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
@@ -85,15 +148,33 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/Vector3D.java" />
-        <option value="$PROJECT_DIR$/src/ModelViewer.java" />
         <option value="$PROJECT_DIR$/src/IncorrectFileTypeException.java" />
+        <option value="$PROJECT_DIR$/src/ModelViewer.java" />
+        <option value="$PROJECT_DIR$/src/ModelViewerGL2.java" />
+        <option value="$PROJECT_DIR$/shaders/vertex.glsl" />
+        <option value="$PROJECT_DIR$/shaders/fragment,glsl.glsl" />
+        <option value="$PROJECT_DIR$/shaders/fragment.fp" />
+        <option value="$PROJECT_DIR$/shaders/yellow.fp.glsl" />
+        <option value="$PROJECT_DIR$/shaders/yellow.fp" />
+        <option value="$PROJECT_DIR$/shaders/cyan.fp" />
+        <option value="$PROJECT_DIR$/shaders/light.fp.glsl" />
+        <option value="$PROJECT_DIR$/src/GLShader.java" />
+        <option value="$PROJECT_DIR$/shaders/light.fp" />
+        <option value="$PROJECT_DIR$/shaders/orange.fp" />
+        <option value="$PROJECT_DIR$/src/GLCamera.java" />
+        <option value="$PROJECT_DIR$/shaders/vertex.vp" />
+        <option value="$PROJECT_DIR$/shaders/toy.fp" />
+        <option value="$PROJECT_DIR$/src/ModelViewerGL4.java" />
+        <option value="$PROJECT_DIR$/src/GLVertex.java" />
+        <option value="$PROJECT_DIR$/src/GLModel.java" />
         <option value="$PROJECT_DIR$/src/GLBModelReader.java" />
+        <option value="$PROJECT_DIR$/src/GLMesh.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="978" />
-    <option name="width" value="1182" />
+    <option name="x" value="1131" />
+    <option name="width" value="1029" />
     <option name="height" value="1440" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -114,10 +195,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -129,6 +209,11 @@
               <item name="OpenGLViewer" type="b2602c69:ProjectViewProjectNode" />
               <item name="OpenGLViewer" type="462c0819:PsiDirectoryNode" />
               <item name="res" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OpenGLViewer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OpenGLViewer" type="462c0819:PsiDirectoryNode" />
+              <item name="shaders" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="OpenGLViewer" type="b2602c69:ProjectViewProjectNode" />
@@ -148,27 +233,45 @@
               <item name="OpenGLViewer" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
               <item name="JOGL" type="70bed36:NamedLibraryElementNode" />
-              <item name="jogl-all-natives-windows-amd64.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="jogl-java-src.zip" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="OpenGLViewer" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
               <item name="JOGL" type="70bed36:NamedLibraryElementNode" />
-              <item name="jogl-all-natives-windows-amd64.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="windows-amd64" type="462c0819:PsiDirectoryNode" />
+              <item name="jogl-java-src.zip" type="462c0819:PsiDirectoryNode" />
+              <item name="jogamp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OpenGLViewer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="JOGL" type="70bed36:NamedLibraryElementNode" />
+              <item name="jogl-java-src.zip" type="462c0819:PsiDirectoryNode" />
+              <item name="jogamp" type="462c0819:PsiDirectoryNode" />
+              <item name="newt" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../PortableGit/bin/git.exe" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../JOGL/gluegen-java-src.zip!/" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="full.screen.before.presentation.mode" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Ryan\Documents\ECE373\ece373\OpenGLViewer\shaders" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -182,7 +285,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.ModelViewerGL4">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -190,12 +293,26 @@
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
     </configuration>
-    <configuration name="ModelViewer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="ModelViewerGL2" type="Application" factoryName="Application" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="ModelViewer" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="MAIN_CLASS_NAME" value="ModelViewerGL2" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="OpenGLViewer" />
+      <envs />
+    </configuration>
+    <configuration name="ModelViewerGL4" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="ModelViewerGL4" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
@@ -278,11 +395,10 @@
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
-    <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Application.ModelViewer" />
-      </list>
-    </recent_temporary>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Application.ModelViewerGL2" />
+      <item index="1" class="java.lang.String" itemvalue="Application.ModelViewerGL4" />
+    </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -301,56 +417,64 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1273" y="0" width="1294" height="1567" extended-state="0" />
+    <frame x="1131" y="0" width="1029" height="1440" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32943603" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32943603" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34663537" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13008937" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32943603" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22586207" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32352942" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2224429" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-    </layout>
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -366,18 +490,94 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/ModelViewer.java">
+    <entry file="file://$PROJECT_DIR$/src/ModelViewerGL2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1275">
+          <caret line="62" column="23" lean-forward="false" selection-start-line="62" selection-start-column="23" selection-end-line="62" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#9077#9078#0" expanded="false" />
+            <element signature="e#9123#9124#0" expanded="false" />
+            <element signature="method#mouseDragged#0;class#ModelViewerGL2#0" expanded="false" />
+            <element signature="method#mouseWheelMoved#0;class#ModelViewerGL2#0" expanded="false" />
+            <element signature="e#10276#10277#0" expanded="false" />
+            <element signature="e#10303#10304#0" expanded="false" />
+            <element signature="e#10377#10378#0" expanded="false" />
+            <element signature="e#10407#10408#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GLBModelReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1250">
+          <caret line="57" column="50" lean-forward="false" selection-start-line="57" selection-start-column="50" selection-end-line="57" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Vector3D.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2000">
+          <caret line="80" column="5" lean-forward="false" selection-start-line="80" selection-start-column="5" selection-end-line="80" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ModelViewerGL4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1425">
+          <caret line="72" column="28" lean-forward="true" selection-start-line="72" selection-start-column="28" selection-end-line="72" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2423#2424#0" expanded="true" />
+            <element signature="e#2457#2458#0" expanded="true" />
+            <element signature="e#11664#11665#0" expanded="true" />
+            <element signature="e#11691#11692#0" expanded="true" />
+            <marker date="1520796377985" expanded="false" signature="3309:3823" ph="..." />
+            <marker date="1520796377985" expanded="false" signature="3876:4637" ph="..." />
+            <marker date="1520796377985" expanded="false" signature="4680:7314" ph="..." />
+            <marker date="1520796377985" expanded="false" signature="7354:7667" ph="..." />
+            <marker date="1520796377985" expanded="false" signature="8332:8476" ph="..." />
+            <marker date="1520796377985" expanded="false" signature="9297:9647" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ModelViewerGL2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#8751#8752#0" expanded="true" />
-            <element signature="e#8797#8798#0" expanded="true" />
-            <element signature="e#9950#9951#0" expanded="true" />
-            <element signature="e#9977#9978#0" expanded="true" />
-            <element signature="e#10051#10052#0" expanded="true" />
-            <element signature="e#10081#10082#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#9077#9078#0" expanded="false" />
+            <element signature="e#9123#9124#0" expanded="false" />
+            <element signature="method#mouseDragged#0;class#ModelViewerGL2#0" expanded="false" />
+            <element signature="method#mouseWheelMoved#0;class#ModelViewerGL2#0" expanded="false" />
+            <element signature="e#10276#10277#0" expanded="false" />
+            <element signature="e#10303#10304#0" expanded="false" />
+            <element signature="e#10377#10378#0" expanded="false" />
+            <element signature="e#10407#10408#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ModelViewerGL2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#9077#9078#0" expanded="false" />
+            <element signature="e#9123#9124#0" expanded="false" />
+            <element signature="method#mouseDragged#0;class#ModelViewerGL2#0" expanded="false" />
+            <element signature="method#mouseWheelMoved#0;class#ModelViewerGL2#0" expanded="false" />
+            <element signature="e#10276#10277#0" expanded="false" />
+            <element signature="e#10303#10304#0" expanded="false" />
+            <element signature="e#10377#10378#0" expanded="false" />
+            <element signature="e#10407#10408#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -386,7 +586,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -394,62 +593,126 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="502">
           <caret line="413" column="47" lean-forward="true" selection-start-line="413" selection-start-column="47" selection-end-line="413" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/awt/Frame.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/awt/Frame.java" />
+    <entry file="file://$PROJECT_DIR$/OpenGLViewer.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="809">
-          <caret line="921" column="29" lean-forward="false" selection-start-line="921" selection-start-column="16" selection-end-line="921" selection-end-column="29" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Vector3D.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1250">
+          <caret line="50" column="5" lean-forward="false" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ModelViewer.java">
+    <entry file="file://$PROJECT_DIR$/src/ModelViewerGL2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#9077#9078#0" expanded="false" />
+            <element signature="e#9123#9124#0" expanded="false" />
+            <element signature="method#mouseDragged#0;class#ModelViewerGL2#0" expanded="false" />
+            <element signature="method#mouseWheelMoved#0;class#ModelViewerGL2#0" expanded="false" />
+            <element signature="e#10276#10277#0" expanded="false" />
+            <element signature="e#10303#10304#0" expanded="false" />
+            <element signature="e#10377#10378#0" expanded="false" />
+            <element signature="e#10407#10408#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ModelViewerGL2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#9077#9078#0" expanded="false" />
+            <element signature="e#9123#9124#0" expanded="false" />
+            <element signature="method#mouseDragged#0;class#ModelViewerGL2#0" expanded="false" />
+            <element signature="method#mouseWheelMoved#0;class#ModelViewerGL2#0" expanded="false" />
+            <element signature="e#10276#10277#0" expanded="false" />
+            <element signature="e#10303#10304#0" expanded="false" />
+            <element signature="e#10377#10378#0" expanded="false" />
+            <element signature="e#10407#10408#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../JOGL/jogl-all.jar!/com/jogamp/opengl/FPSCounter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../JOGL/jogl-all.jar!/com/jogamp/opengl/GL.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="502">
+          <caret line="413" column="47" lean-forward="true" selection-start-line="413" selection-start-column="47" selection-end-line="413" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/awt/Frame.java" />
+    <entry file="file://$PROJECT_DIR$/src/ModelViewerGL2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="765">
           <caret line="45" column="26" lean-forward="true" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#8751#8752#0" expanded="true" />
-            <element signature="e#8797#8798#0" expanded="true" />
-            <element signature="e#9950#9951#0" expanded="true" />
-            <element signature="e#9977#9978#0" expanded="true" />
-            <element signature="e#10051#10052#0" expanded="true" />
-            <element signature="e#10081#10082#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#9077#9078#0" expanded="false" />
+            <element signature="e#9123#9124#0" expanded="false" />
+            <element signature="method#mouseDragged#0;class#ModelViewerGL2#0" expanded="false" />
+            <element signature="method#mouseWheelMoved#0;class#ModelViewerGL2#0" expanded="false" />
+            <element signature="e#10276#10277#0" expanded="false" />
+            <element signature="e#10303#10304#0" expanded="false" />
+            <element signature="e#10377#10378#0" expanded="false" />
+            <element signature="e#10407#10408#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ModelViewer.java">
+    <entry file="file://$PROJECT_DIR$/src/ModelViewerGL2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#8751#8752#0" expanded="true" />
-            <element signature="e#8797#8798#0" expanded="true" />
-            <element signature="e#9950#9951#0" expanded="true" />
-            <element signature="e#9977#9978#0" expanded="true" />
-            <element signature="e#10051#10052#0" expanded="true" />
-            <element signature="e#10081#10082#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#9077#9078#0" expanded="false" />
+            <element signature="e#9123#9124#0" expanded="false" />
+            <element signature="method#mouseDragged#0;class#ModelViewerGL2#0" expanded="false" />
+            <element signature="method#mouseWheelMoved#0;class#ModelViewerGL2#0" expanded="false" />
+            <element signature="e#10276#10277#0" expanded="false" />
+            <element signature="e#10303#10304#0" expanded="false" />
+            <element signature="e#10377#10378#0" expanded="false" />
+            <element signature="e#10407#10408#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ModelViewer.java">
+    <entry file="file://$PROJECT_DIR$/src/ModelViewerGL2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#8751#8752#0" expanded="true" />
-            <element signature="e#8797#8798#0" expanded="true" />
-            <element signature="e#9950#9951#0" expanded="true" />
-            <element signature="e#9977#9978#0" expanded="true" />
-            <element signature="e#10051#10052#0" expanded="true" />
-            <element signature="e#10081#10082#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#9077#9078#0" expanded="false" />
+            <element signature="e#9123#9124#0" expanded="false" />
+            <element signature="method#mouseDragged#0;class#ModelViewerGL2#0" expanded="false" />
+            <element signature="method#mouseWheelMoved#0;class#ModelViewerGL2#0" expanded="false" />
+            <element signature="e#10276#10277#0" expanded="false" />
+            <element signature="e#10303#10304#0" expanded="false" />
+            <element signature="e#10377#10378#0" expanded="false" />
+            <element signature="e#10407#10408#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -480,49 +743,238 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/IncorrectFileTypeException.java" />
+    <entry file="jar://$PROJECT_DIR$/../JOGL/jogl-java-src.zip!/com/jogamp/newt/Display.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="47" column="22" lean-forward="false" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/IncorrectFileTypeException.java">
+    <entry file="jar://$PROJECT_DIR$/../JOGL/jogl-java-src.zip!/com/jogamp/newt/opengl/GLWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="4" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+        <state relative-caret-position="272">
+          <caret line="577" column="0" lean-forward="false" selection-start-line="577" selection-start-column="0" selection-end-line="577" selection-end-column="0" />
+          <folding>
+            <element signature="e#17733#17734#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../JOGL/jogl-java-src.zip!/jogamp/newt/DefaultEDTUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="251" column="0" lean-forward="false" selection-start-line="251" selection-start-column="0" selection-end-line="251" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../JOGL/jogl-java-src.zip!/jogamp/newt/DisplayImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="441" column="0" lean-forward="false" selection-start-line="441" selection-start-column="0" selection-end-line="441" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../JOGL/jogl-java-src.zip!/jogamp/newt/WindowImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="2781" column="0" lean-forward="false" selection-start-line="2781" selection-start-column="0" selection-end-line="2781" selection-end-column="0" />
+          <folding>
+            <element signature="e#54168#54169#0" expanded="false" />
+            <element signature="e#54209#54210#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hs_err_pid8264.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1950">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shaders/cyan.fp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="5" lean-forward="false" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Vector3D.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-11">
+          <caret line="27" column="7" lean-forward="false" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ModelViewerGL2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="62" column="23" lean-forward="false" selection-start-line="62" selection-start-column="23" selection-end-line="62" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#9077#9078#0" expanded="false" />
+            <element signature="e#9123#9124#0" expanded="false" />
+            <element signature="method#mouseDragged#0;class#ModelViewerGL2#0" expanded="false" />
+            <element signature="method#mouseWheelMoved#0;class#ModelViewerGL2#0" expanded="false" />
+            <element signature="e#10276#10277#0" expanded="false" />
+            <element signature="e#10303#10304#0" expanded="false" />
+            <element signature="e#10377#10378#0" expanded="false" />
+            <element signature="e#10407#10408#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GLShader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="665">
+          <caret line="75" column="57" lean-forward="true" selection-start-line="75" selection-start-column="57" selection-end-line="75" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1284#1285#0" expanded="false" />
+            <element signature="e#1321#1322#0" expanded="false" />
+            <element signature="e#1351#1352#0" expanded="false" />
+            <element signature="e#1393#1394#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shaders/orange.fp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../JOGL/jogl-java-src.zip!/com/jogamp/newt/event/KeyEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="594" column="30" lean-forward="false" selection-start-line="594" selection-start-column="30" selection-end-line="594" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shaders/toy.fp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="36" column="38" lean-forward="true" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shaders/vertex.vp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="4" lean-forward="true" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GLCamera.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="55" column="19" lean-forward="false" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1832#1833#0" expanded="false" />
+            <element signature="e#1858#1859#0" expanded="false" />
+            <element signature="e#1899#1900#0" expanded="false" />
+            <element signature="e#1939#1940#0" expanded="false" />
+            <element signature="e#1973#1974#0" expanded="false" />
+            <element signature="e#1996#1997#0" expanded="false" />
+            <element signature="e#2032#2033#0" expanded="false" />
+            <element signature="e#2057#2058#0" expanded="false" />
+            <element signature="e#2092#2093#0" expanded="false" />
+            <element signature="e#2116#2117#0" expanded="false" />
+            <element signature="e#2152#2153#0" expanded="false" />
+            <element signature="e#2175#2176#0" expanded="false" />
+            <element signature="e#2211#2212#0" expanded="false" />
+            <element signature="e#2237#2238#0" expanded="false" />
+            <element signature="e#5070#5071#0" expanded="false" />
+            <element signature="e#5097#5098#0" expanded="false" />
+            <element signature="e#5135#5136#0" expanded="false" />
+            <element signature="e#5168#5169#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shaders/light.fp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/src.zip!/java/nio/FloatBuffer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="992" column="14" lean-forward="false" selection-start-line="992" selection-start-column="14" selection-end-line="992" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GLVertex.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ModelViewerGL4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="234" column="40" lean-forward="true" selection-start-line="197" selection-start-column="8" selection-end-line="234" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2423#2424#0" expanded="true" />
+            <element signature="e#2457#2458#0" expanded="true" />
+            <element signature="e#11664#11665#0" expanded="true" />
+            <element signature="e#11691#11692#0" expanded="true" />
+            <marker date="1520796377985" expanded="false" signature="3309:3823" ph="..." />
+            <marker date="1520796377985" expanded="false" signature="3876:4637" ph="..." />
+            <marker date="1520796377985" expanded="false" signature="4680:7314" ph="..." />
+            <marker date="1520796377985" expanded="false" signature="7354:7667" ph="..." />
+            <marker date="1520796377985" expanded="false" signature="8332:8476" ph="..." />
+            <marker date="1520796377985" expanded="false" signature="9297:9647" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GLModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="6" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GLBModelReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="47" column="52" lean-forward="false" selection-start-line="47" selection-start-column="52" selection-end-line="47" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ModelViewer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="95" column="43" lean-forward="false" selection-start-line="95" selection-start-column="43" selection-end-line="95" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#8751#8752#0" expanded="true" />
-            <element signature="e#8797#8798#0" expanded="true" />
-            <element signature="e#9950#9951#0" expanded="true" />
-            <element signature="e#9977#9978#0" expanded="true" />
-            <element signature="e#10051#10052#0" expanded="true" />
-            <element signature="e#10081#10082#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Vector3D.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="53" column="27" lean-forward="false" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="27" />
+        <state relative-caret-position="258">
+          <caret line="168" column="28" lean-forward="true" selection-start-line="168" selection-start-column="28" selection-end-line="168" selection-end-column="28" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GLMesh.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="75" column="29" lean-forward="true" selection-start-line="75" selection-start-column="29" selection-end-line="75" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -566,7 +1018,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>9.0</last-edited>
+          <last-edited>1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -590,7 +1042,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>JOGL_build</last-edited>
+          <last-edited>JOGL</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
