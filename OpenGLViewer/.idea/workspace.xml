@@ -2,25 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ba256d1-f606-4e18-9280-f6a53b9c7b68" name="Default" comment="Added 3D Cube, movement, and camera motion">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/com_google_code_gson_gson_2_8_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/shaders/cyan.fp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/shaders/light.fp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/shaders/orange.fp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/shaders/toy.fp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/shaders/vertex.vp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/GLCamera.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/GLMesh.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/GLModel.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/GLShader.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/GLVertex.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/ModelViewerGL4.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/JOGL.xml" afterPath="$PROJECT_DIR$/.idea/libraries/JOGL.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/JOGL_build.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/OpenGLViewer.iml" afterPath="$PROJECT_DIR$/OpenGLViewer.iml" />
-      <change beforePath="$PROJECT_DIR$/out/production/OpenGLViewer/ModelViewer.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/GLBModelReader.java" afterPath="$PROJECT_DIR$/src/GLBModelReader.java" />
-      <change beforePath="$PROJECT_DIR$/src/ModelViewer.java" afterPath="$PROJECT_DIR$/src/ModelViewerGL2.java" />
+      <change beforePath="$PROJECT_DIR$/out/production/OpenGLViewer/GLMesh$GLTexture.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/OpenGLViewer/GLMesh.class" afterPath="$PROJECT_DIR$/out/production/OpenGLViewer/GLMesh.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/OpenGLViewer/ModelViewerGL4.class" afterPath="$PROJECT_DIR$/out/production/OpenGLViewer/ModelViewerGL4.class" />
+      <change beforePath="$PROJECT_DIR$/src/ModelViewerGL4.java" afterPath="$PROJECT_DIR$/src/ModelViewerGL4.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,12 +17,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
       <file leaf-file-name="GLBModelReader.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GLBModelReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="168" column="28" lean-forward="true" selection-start-line="168" selection-start-column="28" selection-end-line="168" selection-end-column="28" />
+            <state relative-caret-position="3900">
+              <caret line="168" column="28" lean-forward="false" selection-start-line="168" selection-start-column="28" selection-end-line="168" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -52,11 +38,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GLMesh.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GLMesh.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GLMesh.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="75" column="29" lean-forward="true" selection-start-line="75" selection-start-column="29" selection-end-line="75" selection-end-column="29" />
+            <state relative-caret-position="1650">
+              <caret line="75" column="29" lean-forward="false" selection-start-line="75" selection-start-column="29" selection-end-line="75" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -64,24 +50,44 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ModelViewerGL4.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ModelViewerGL4.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ModelViewerGL4.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="234" column="40" lean-forward="true" selection-start-line="197" selection-start-column="8" selection-end-line="234" selection-end-column="40" />
+            <state relative-caret-position="3900">
+              <caret line="318" column="31" lean-forward="false" selection-start-line="318" selection-start-column="31" selection-end-line="318" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2423#2424#0" expanded="true" />
-                <element signature="e#2457#2458#0" expanded="true" />
-                <element signature="e#11664#11665#0" expanded="true" />
-                <element signature="e#11691#11692#0" expanded="true" />
-                <marker date="1520796377985" expanded="false" signature="3309:3823" ph="..." />
-                <marker date="1520796377985" expanded="false" signature="3876:4637" ph="..." />
-                <marker date="1520796377985" expanded="false" signature="4680:7314" ph="..." />
-                <marker date="1520796377985" expanded="false" signature="7354:7667" ph="..." />
-                <marker date="1520796377985" expanded="false" signature="8332:8476" ph="..." />
-                <marker date="1520796377985" expanded="false" signature="9297:9647" ph="..." />
+                <element signature="e#2426#2427#0" expanded="true" />
+                <element signature="e#2460#2461#0" expanded="true" />
+                <element signature="e#11663#11664#0" expanded="true" />
+                <element signature="e#11690#11691#0" expanded="true" />
+                <marker date="1523762124501" expanded="false" signature="3312:3822" ph="..." />
+                <marker date="1523762124501" expanded="false" signature="3875:4636" ph="..." />
+                <marker date="1523762124501" expanded="false" signature="4679:7313" ph="..." />
+                <marker date="1523762124501" expanded="false" signature="7353:7666" ph="..." />
+                <marker date="1523762124501" expanded="false" signature="8331:8475" ph="..." />
+                <marker date="1523762124501" expanded="false" signature="9296:9646" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GLCamera.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GLCamera.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2750">
+              <caret line="134" column="40" lean-forward="true" selection-start-line="134" selection-start-column="40" selection-end-line="134" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GLShader.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GLShader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="654">
+              <caret line="63" column="30" lean-forward="true" selection-start-line="63" selection-start-column="30" selection-end-line="63" selection-end-column="30" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -90,7 +96,7 @@
         <entry file="file://$PROJECT_DIR$/shaders/vertex.vp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="4" lean-forward="true" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+              <caret line="0" column="17" lean-forward="false" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -99,8 +105,8 @@
       <file leaf-file-name="toy.fp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/shaders/toy.fp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="36" column="38" lean-forward="true" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
+            <state relative-caret-position="525">
+              <caret line="21" column="26" lean-forward="false" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -164,11 +170,11 @@
         <option value="$PROJECT_DIR$/src/GLCamera.java" />
         <option value="$PROJECT_DIR$/shaders/vertex.vp" />
         <option value="$PROJECT_DIR$/shaders/toy.fp" />
-        <option value="$PROJECT_DIR$/src/ModelViewerGL4.java" />
         <option value="$PROJECT_DIR$/src/GLVertex.java" />
         <option value="$PROJECT_DIR$/src/GLModel.java" />
         <option value="$PROJECT_DIR$/src/GLBModelReader.java" />
         <option value="$PROJECT_DIR$/src/GLMesh.java" />
+        <option value="$PROJECT_DIR$/src/ModelViewerGL4.java" />
       </list>
     </option>
   </component>
@@ -195,9 +201,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -254,6 +257,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -417,24 +423,22 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1131" y="0" width="1029" height="1440" extended-state="0" />
+    <frame x="1131" y="0" width="1029" height="1440" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37829912" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13008937" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13306852" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -445,7 +449,9 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -485,11 +491,55 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/shaders/vertex.vp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="4" lean-forward="true" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shaders/toy.fp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="36" column="38" lean-forward="true" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shaders/light.fp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ModelViewerGL4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="30" column="16" lean-forward="false" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2426#2427#0" expanded="true" />
+            <element signature="e#2460#2461#0" expanded="true" />
+            <element signature="e#11663#11664#0" expanded="true" />
+            <element signature="e#11690#11691#0" expanded="true" />
+            <marker date="1523762124501" expanded="false" signature="3312:3822" ph="..." />
+            <marker date="1523762124501" expanded="false" signature="3875:4636" ph="..." />
+            <marker date="1523762124501" expanded="false" signature="4679:7313" ph="..." />
+            <marker date="1523762124501" expanded="false" signature="7353:7666" ph="..." />
+            <marker date="1523762124501" expanded="false" signature="8331:8475" ph="..." />
+            <marker date="1523762124501" expanded="false" signature="9296:9646" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ModelViewerGL2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1275">
@@ -512,9 +562,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1250">
           <caret line="57" column="50" lean-forward="false" selection-start-line="57" selection-start-column="50" selection-end-line="57" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -532,16 +580,16 @@
           <caret line="72" column="28" lean-forward="true" selection-start-line="72" selection-start-column="28" selection-end-line="72" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2423#2424#0" expanded="true" />
-            <element signature="e#2457#2458#0" expanded="true" />
-            <element signature="e#11664#11665#0" expanded="true" />
-            <element signature="e#11691#11692#0" expanded="true" />
-            <marker date="1520796377985" expanded="false" signature="3309:3823" ph="..." />
-            <marker date="1520796377985" expanded="false" signature="3876:4637" ph="..." />
-            <marker date="1520796377985" expanded="false" signature="4680:7314" ph="..." />
-            <marker date="1520796377985" expanded="false" signature="7354:7667" ph="..." />
-            <marker date="1520796377985" expanded="false" signature="8332:8476" ph="..." />
-            <marker date="1520796377985" expanded="false" signature="9297:9647" ph="..." />
+            <element signature="e#2426#2427#0" expanded="true" />
+            <element signature="e#2460#2461#0" expanded="true" />
+            <element signature="e#11663#11664#0" expanded="true" />
+            <element signature="e#11690#11691#0" expanded="true" />
+            <marker date="1523762124501" expanded="false" signature="3312:3822" ph="..." />
+            <marker date="1523762124501" expanded="false" signature="3875:4636" ph="..." />
+            <marker date="1523762124501" expanded="false" signature="4679:7313" ph="..." />
+            <marker date="1523762124501" expanded="false" signature="7353:7666" ph="..." />
+            <marker date="1523762124501" expanded="false" signature="8331:8475" ph="..." />
+            <marker date="1523762124501" expanded="false" signature="9296:9646" ph="..." />
           </folding>
         </state>
       </provider>
@@ -769,7 +817,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="412">
           <caret line="251" column="0" lean-forward="false" selection-start-line="251" selection-start-column="0" selection-end-line="251" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -777,7 +824,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="422">
           <caret line="441" column="0" lean-forward="false" selection-start-line="441" selection-start-column="0" selection-end-line="441" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -785,26 +831,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="262">
           <caret line="2781" column="0" lean-forward="false" selection-start-line="2781" selection-start-column="0" selection-end-line="2781" selection-end-column="0" />
-          <folding>
-            <element signature="e#54168#54169#0" expanded="false" />
-            <element signature="e#54209#54210#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hs_err_pid8264.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1950">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/hs_err_pid8264.log" />
     <entry file="file://$PROJECT_DIR$/shaders/cyan.fp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="4" column="5" lean-forward="false" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -834,25 +868,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GLShader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="665">
-          <caret line="75" column="57" lean-forward="true" selection-start-line="75" selection-start-column="57" selection-end-line="75" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1284#1285#0" expanded="false" />
-            <element signature="e#1321#1322#0" expanded="false" />
-            <element signature="e#1351#1352#0" expanded="false" />
-            <element signature="e#1393#1394#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/shaders/orange.fp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -860,59 +879,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="594" column="30" lean-forward="false" selection-start-line="594" selection-start-column="30" selection-end-line="594" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shaders/toy.fp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="36" column="38" lean-forward="true" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shaders/vertex.vp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="4" lean-forward="true" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GLCamera.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="55" column="19" lean-forward="false" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1832#1833#0" expanded="false" />
-            <element signature="e#1858#1859#0" expanded="false" />
-            <element signature="e#1899#1900#0" expanded="false" />
-            <element signature="e#1939#1940#0" expanded="false" />
-            <element signature="e#1973#1974#0" expanded="false" />
-            <element signature="e#1996#1997#0" expanded="false" />
-            <element signature="e#2032#2033#0" expanded="false" />
-            <element signature="e#2057#2058#0" expanded="false" />
-            <element signature="e#2092#2093#0" expanded="false" />
-            <element signature="e#2116#2117#0" expanded="false" />
-            <element signature="e#2152#2153#0" expanded="false" />
-            <element signature="e#2175#2176#0" expanded="false" />
-            <element signature="e#2211#2212#0" expanded="false" />
-            <element signature="e#2237#2238#0" expanded="false" />
-            <element signature="e#5070#5071#0" expanded="false" />
-            <element signature="e#5097#5098#0" expanded="false" />
-            <element signature="e#5135#5136#0" expanded="false" />
-            <element signature="e#5168#5169#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shaders/light.fp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -920,7 +886,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="992" column="14" lean-forward="false" selection-start-line="992" selection-start-column="14" selection-end-line="992" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -929,26 +894,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ModelViewerGL4.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="234" column="40" lean-forward="true" selection-start-line="197" selection-start-column="8" selection-end-line="234" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2423#2424#0" expanded="true" />
-            <element signature="e#2457#2458#0" expanded="true" />
-            <element signature="e#11664#11665#0" expanded="true" />
-            <element signature="e#11691#11692#0" expanded="true" />
-            <marker date="1520796377985" expanded="false" signature="3309:3823" ph="..." />
-            <marker date="1520796377985" expanded="false" signature="3876:4637" ph="..." />
-            <marker date="1520796377985" expanded="false" signature="4680:7314" ph="..." />
-            <marker date="1520796377985" expanded="false" signature="7354:7667" ph="..." />
-            <marker date="1520796377985" expanded="false" signature="8332:8476" ph="..." />
-            <marker date="1520796377985" expanded="false" signature="9297:9647" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -962,18 +907,78 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GLBModelReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="168" column="28" lean-forward="true" selection-start-line="168" selection-start-column="28" selection-end-line="168" selection-end-column="28" />
+        <state relative-caret-position="3900">
+          <caret line="168" column="28" lean-forward="false" selection-start-line="168" selection-start-column="28" selection-end-line="168" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GLMesh.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="75" column="29" lean-forward="true" selection-start-line="75" selection-start-column="29" selection-end-line="75" selection-end-column="29" />
+        <state relative-caret-position="1650">
+          <caret line="75" column="29" lean-forward="false" selection-start-line="75" selection-start-column="29" selection-end-line="75" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shaders/light.fp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shaders/vertex.vp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="17" lean-forward="false" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shaders/toy.fp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="21" column="26" lean-forward="false" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GLCamera.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2750">
+          <caret line="134" column="40" lean-forward="true" selection-start-line="134" selection-start-column="40" selection-end-line="134" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GLShader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="654">
+          <caret line="63" column="30" lean-forward="true" selection-start-line="63" selection-start-column="30" selection-end-line="63" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ModelViewerGL4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3900">
+          <caret line="318" column="31" lean-forward="false" selection-start-line="318" selection-start-column="31" selection-end-line="318" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2426#2427#0" expanded="true" />
+            <element signature="e#2460#2461#0" expanded="true" />
+            <element signature="e#11663#11664#0" expanded="true" />
+            <element signature="e#11690#11691#0" expanded="true" />
+            <marker date="1523762124501" expanded="false" signature="3312:3822" ph="..." />
+            <marker date="1523762124501" expanded="false" signature="3875:4636" ph="..." />
+            <marker date="1523762124501" expanded="false" signature="4679:7313" ph="..." />
+            <marker date="1523762124501" expanded="false" signature="7353:7666" ph="..." />
+            <marker date="1523762124501" expanded="false" signature="8331:8475" ph="..." />
+            <marker date="1523762124501" expanded="false" signature="9296:9646" ph="..." />
           </folding>
         </state>
       </provider>

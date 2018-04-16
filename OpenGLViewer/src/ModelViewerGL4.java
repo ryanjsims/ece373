@@ -22,15 +22,15 @@ public class ModelViewerGL4
         implements GLEventListener, KeyListener{
 
     public static void main(String[] args){
-        //ModelViewerGL4 viewer = new ModelViewerGL4();
+        ModelViewerGL4 viewer = new ModelViewerGL4();
         //viewer.view();
-        try {
+        /*try {
             GLBModelReader reader = new GLBModelReader("res/hemisphere.glb");
         } catch(IOException e){
             e.printStackTrace();
         } catch(DataFormatException e){
             e.printStackTrace();
-        }
+        }*/
     }
 
     private GLWindow window;
@@ -41,7 +41,7 @@ public class ModelViewerGL4
     private Matrix4 model;
     private TextureData texture;
     private float[][] cubePositions;
-    private float[] lightPos = new float[]{1.2f, 1.0f, 2.0f};
+    private float[] lightPos = new float[]{1.2f, 1.0f, -2.0f};
 
 
     public ModelViewerGL4(){
@@ -103,7 +103,7 @@ public class ModelViewerGL4
 
         cubePositions = new float[][]{
                 new float[]{ 0.0f,  0.0f,  0.0f},
-                /*new float[]{ 2.0f,  5.0f, -15.0f},
+                new float[]{ 2.0f,  5.0f, -15.0f},
                 new float[]{-1.5f, -2.2f, -2.5f},
                 new float[]{-3.8f, -2.0f, -12.3f},
                 new float[]{ 2.4f, -0.4f, -3.5f},
@@ -111,7 +111,7 @@ public class ModelViewerGL4
                 new float[]{ 1.3f, -2.0f, -2.5f},
                 new float[]{ 1.5f,  2.0f, -2.5f},
                 new float[]{ 1.5f,  0.2f, -1.5f},
-                new float[]{-1.3f,  1.0f, -1.5f}*/
+                new float[]{-1.3f,  1.0f, -1.5f}
         };
 
         float[] verticesForIndices = new float[]{
@@ -290,8 +290,8 @@ public class ModelViewerGL4
         GL4 gl = drawable.getGL().getGL4();
         gl.glClear(GL4.GL_COLOR_BUFFER_BIT | GL4.GL_DEPTH_BUFFER_BIT);
 
-        //lightPos[0] = (float)(2 / Math.sqrt(2) * Math.sin(System.currentTimeMillis() * Math.PI / 2000.0));
-        //lightPos[1] = (float)(2 * Math.cos(System.currentTimeMillis() * Math.PI / 2000.0));
+        lightPos[0] = (float)(5 / Math.sqrt(2) * Math.sin(System.currentTimeMillis() * Math.PI / 86400000.0));
+        lightPos[1] = (float)(5 * Math.cos(System.currentTimeMillis() * Math.PI / 86400000.0));
         //lightPos[2] = (float)(2 / Math.sqrt(2) * Math.sin(System.currentTimeMillis() * Math.PI / 2000.0));
 
         camera.update();
