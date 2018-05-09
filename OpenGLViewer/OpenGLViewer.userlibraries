@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eclipse-userlibraries>
+  <library name="JOGL">
+    <archive path="C:/Users/Ryan/Documents/ECE373/ece373/JOGL/gluegen-rt-natives-linux-amd64.jar" />
+    <archive path="C:/Users/Ryan/Documents/ECE373/ece373/JOGL/gluegen-rt-natives-linux-i586.jar" />
+    <archive path="C:/Users/Ryan/Documents/ECE373/ece373/JOGL/gluegen-rt-natives-windows-amd64.jar" />
+    <archive path="C:/Users/Ryan/Documents/ECE373/ece373/JOGL/gluegen-rt-natives-windows-i586.jar" />
+    <archive path="C:/Users/Ryan/Documents/ECE373/ece373/JOGL/gluegen-rt.jar" />
+    <archive path="C:/Users/Ryan/Documents/ECE373/ece373/JOGL/gluegen.jar" />
+    <archive path="C:/Users/Ryan/Documents/ECE373/ece373/JOGL/jogl-all-natives-linux-amd64.jar" />
+    <archive path="C:/Users/Ryan/Documents/ECE373/ece373/JOGL/jogl-all-natives-linux-i586.jar" />
+    <archive path="C:/Users/Ryan/Documents/ECE373/ece373/JOGL/jogl-all-natives-windows-amd64.jar" />
+    <archive path="C:/Users/Ryan/Documents/ECE373/ece373/JOGL/jogl-all-natives-windows-i586.jar" />
+    <archive path="C:/Users/Ryan/Documents/ECE373/ece373/JOGL/jogl-all.jar" />
+    <archive path="C:/Users/Ryan/Documents/ECE373/ece373/JOGL/gluegen.jar" />
+    <archive path="C:/Users/Ryan/Documents/ECE373/ece373/JOGL/jogl-all.jar" />
+    <archive path="C:/Users/Ryan/Documents/ECE373/ece373/JOGL/gluegen-rt.jar" />
+    <archive path="C:/Users/Ryan/Documents/ECE373/ece373/JOGL/jogl-java-src.zip" />
+    <archive path="C:/Users/Ryan/Documents/ECE373/ece373/JOGL/gluegen-java-src.zip" />
+    <archive path="C:/Users/Ryan/Documents/ECE373/ece373/JOGL/jogl-all-natives-linux-i586.jar" />
+    <archive path="C:/Users/Ryan/Documents/ECE373/ece373/JOGL/jogl-all-natives-linux-amd64.jar" />
+    <archive path="C:/Users/Ryan/Documents/ECE373/ece373/JOGL/gluegen-rt-natives-linux-i586.jar" />
+    <archive path="C:/Users/Ryan/Documents/ECE373/ece373/JOGL/jogl-all-natives-windows-i586.jar" />
+    <archive path="C:/Users/Ryan/Documents/ECE373/ece373/JOGL/gluegen-rt-natives-linux-amd64.jar" />
+    <archive path="C:/Users/Ryan/Documents/ECE373/ece373/JOGL/jogl-all-natives-windows-amd64.jar" />
+    <archive path="C:/Users/Ryan/Documents/ECE373/ece373/JOGL/gluegen-rt-natives-windows-i586.jar" />
+    <archive path="C:/Users/Ryan/Documents/ECE373/ece373/JOGL/gluegen-rt-natives-windows-amd64.jar" />
+  </library>
+  <library name="com.google.code.gson:gson:2.8.2">
+    <archive path="C:/Users/Ryan/.m2/repository/com/google/code/gson/gson/2.8.2/gson-2.8.2.jar" />
+  </library>
+</eclipse-userlibraries>
+
